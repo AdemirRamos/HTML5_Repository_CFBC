@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - "Tag a" (Âncora)</title>
+
+    <style>
+
+        a {
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p><a href="#fim" id="topo">Âncora vazia.</a></p>
+
+    <a href="http://www.youtube.com/cfbcursos">Canal CFB</a>
+
+    <!--O parâmetro "href" é o que caracteriza uma âncora.-->
+    <!--Todos os elementos dentro de uma "tag" são chamados de "parâmetros". Os parâmetros servem para configurar a "tag" em que estão.-->
+    <!--O padrão de utilização dos parâmetros é: um nome seguido do sinal de igualdade. Exemplo: target="_blank".-->
+    <!--O que está após o sinal de igualdade, é chamado de "valor". Já as aspas, não são obrigatória em todos os casos, só em alguns.-->
+
+    <a href="aula4.html">Aula 4</a>
+
+    <!--O padrão de "display" da "tag a" é "inline".-->
+    <!--Quando o arquivo destino está na mesma pasta da sua página, basta adicionar o nome do arquivo-destino à sua âncora.-->
+    <!--Caso o arquivo esteja na mesma pasta porém dentro de outra pasta, basta usar o comando "nomedapasta/nomedapasta".-->
+    <!--E, quando se está dentro da arquivo dentro de outra pasta, e se deseja voltar para a primeira página, usamos esse comando:-->
+    <!--"../nomedapasta/nomedoarquivo."-->
+
+    <a href="#" target="_blank">Canal 1</a>
+
+    <!--"target" indica onde a nova página será aberta.-->
+    <!--"target='_self'" é o parâmetro padrão de "target", por isso, o seu uso é facultativo. A nova página será aberta na mesma guia.-->
+
+    <!--Quando o "link" leva a um endereço externo ao seu site, o caminho deve vir completo, ou seja, "http://www.endereço.com".-->
+
+    <a href="#" target="_blank" rel="external" media="all" hreflang="pt-br" type="text/html">Canal</a>
+
+    <!--"rel='external'" indica que o conteúdo do "link" é externo em relação ao nosso "site".-->
+    <!--"media" indica qual mídia é a preferencial para abrir o "link" em questão. O valor "all" é o padrão desse parâmetro.-->
+    <!--Assim como "_self", "all", por ser o valor padrão do seu parâmetro, pode ser omitido, ou seja, seu uso é facultativo.-->
+    <!--"hreflang" indica o idioma da página a ser aberta.-->
+    <!--"type" indica o tipo de conteúdo na codificação do arquivo-destino.-->
+
+    <a href="logo.rar" download>Download da imagem</a>
+
+    <!--"download" serve para preparar o "browser" reconhecer o arquivo do "link" como um arquivo para ser baixado.-->
+    <!--Caso se deseje mudar o nome do arquivo quando ele for baixado, basta adicionar um valor com o nome para o arquivo ao parâmetro.-->
+    <!--Exemplo: download="foto1". Caso você esteja trabalhando com a página "offline", esse recurso não funcionará.-->
+    <!--O nome do arquivo baixado só mudara para o valor do parâmetro "download" quando o seu "site" estiver "online".-->
+    <!--Nos "links", a porcentagem (%) significa espaço.-->
+
+    <a href="#">Enviar e-mails</a>
+
+    <!--É possível configuar o "link" acima de modo que ele abra o dispositivo padrão de e-mails do sistema do usuário.-->
+
+    <a href="javascript:alert('CFB Cursos.');">Canal</a>
+
+    <!--O "link" acima, ao ser clicado, gerará um "alert".-->
+
+    <!--É possível configurar "links" para que eles apontem para pontos específicos da sua página.-->
+    <!--Para fazer isso, basta usar "id" e "href". A seguir, temos um exemplo disso.-->
+    <!--Somente o que está dentro da "tag a" é considerado "link".-->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <a href="#topo" id="fim">Fim da página</a>
+
+</body>
+
+</html>
