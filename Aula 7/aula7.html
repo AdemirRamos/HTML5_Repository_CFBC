@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 - "Tags area / map" (Mapeando Links)</title>
+
+</head>
+
+<body>
+    
+    <!--Basicamente, a "tag area" vai definir uma área clicável através de definições de formas.-->
+    <!--A "tag map" pode ir antes ou depois da área a se selecionar.-->
+    <!--A "tag area" é filha da "tag map". Sendo assim, para trabalhar com "area", é preciso uma "tag map".-->
+
+    <img src="Imagens/mapa_brasil.jpg" usemap="#mapa_brasil" alt="Mapa do Brasil.">
+
+    <map name="mapa_brasil">
+
+        <area shape="poly" coords="171,230, 190,221, 201,198, 241,204, 225,243, 201,249, 195,231, 174,230" href="aula7.1.html" alt="Área clicável do mapa do Brasil - Estados de Minas Gerais.">
+
+        <area shape="poly" coords="145,109, 170,109, 171,150, 144,150" href="aula7.2.html" alt="Área clicável do mapa do Brasil - Estados do Pará.">
+
+        <area shape="rect" coords="145,109, 170,109" href="aula7.2.html" alt="Área clicável do mapa do Brasil - Estado do Pará.">
+        <!--O valor "rect" não funcionou comigo.-->
+
+        <area shape="circle" coords="82,122, 50" href="aula7.3.html" alt="Área clicável do mapa do Brasil - Estado do Amazonas.">
+        <!--O valor "circle" funcionou.-->
+        <!--Após a coordenada que representa o ponto onde você desejar configurar o círculo, se adiciona um valor para ser o raio do círculo.-->
+
+        <!--A "tag area" não demanda fechamento.-->
+        <!--Características da tag map: display: none (nenhum); categoria: fluxo e fraseado; contido por: <map>; filhos: none (vazio).-->
+        <!--Assim como "img", "map" não possui filhos pois não sua "tag" não tem fechamento.-->
+        <!--O parâmetro "alt" diz respeito a uma explicação da imagem. É útil para leitores de tela.-->
+        <!--Formas de "area": rect: retângulo; circle: círculo; poly: polígono.-->
+        <!--"coords" diz respeito às coordenadas da área clicável.-->
+        <!--Para que a "tag area" funcione, é preciso adicionar, na "tag img", o parâmetro "usemap=''".-->
+        <!--Dentro das aspas do parâmetro "usemap", vai o valor do parâmetro "name" pertencente à "map".-->
+        <!--O valor do parâmetro "usemap" deve receber uma "#" antes de receber o valor do parâmetro (de "map") "name".-->
+        <!--Caso se queira criar mais imagens clicáveis, basta colocar, aqui mesmo, mais "tags area".-->
+
+    </map>
+
+</body>
+
+</html>
