@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 - "Tags article" e a Nova Semântica</title>
+
+    <style>
+
+        article {
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #eee;
+            margin-bottom: 15px;
+        }
+
+        article > h1 {
+            color: #f00;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--Apesar de, a partir do HTML5, existir essas novas "tags semântica" (como "article"), ainda é possível usar "div" em seu lugar.-->
+    <!--"Tags de seção:" "section", "article", "aside", "sect", "footer", "nav", "main" entre outras.-->
+
+    <h1>Curso de HTML</h1>
+
+    <article>
+
+        <!--Essa "tag" representa uma seção independente no documento.-->
+        <!--Essa "tag", portanto, pode ser usada para representar uma área, um assunto específico ou área específica no documento.-->
+        <!--Dentro de "article", não podemos ter os seguintes conteúdos: cabeçalho, navegação e rodapé.-->
+        <!--"article": display: block; categoria: fluxo e seção; contido: fluxo; filhos: fluxo; DOM Interface: uses HTMLElement.-->
+        <!--Seção == container.-->
+        <!--Agora, vejamos o que podemos ter dentro de um "article".-->
+
+        <h1>Título</h1>
+        <p>Canal de cursos gratuitos no YouTube.</p>
+
+        <!--"articles" podem ser aninhados em outros "articles" ou "section"; "article" também pode conter um "header" e "footer".-->
+        <!--Antigamente, isso seria feita da seguinte maneira: "div" da classe "article", no lugar de "article", englobando o conteúdo.-->
+
+        <article>
+
+            <h2>Cursos Disponíveis:</h2>
+            <p>HTML / HTML5 / HTML Completo e Profissional;</p>
+            <p>CSS;</p>
+            <p>Javascript;</p>
+            <p>C++;</p>
+            <p>QT Creator;</p>
+            <p>PHP e My SQL;</p>
+            <p>Unity e C#;</p>
+            <p>Photoshop;</p>
+            <p>Flash;</p>
+            <p>Arduino.</p>
+
+        </article>
+
+    </article>
+
+    <article>
+
+        <h1>Cursos Disponíveis:</h1>
+        <p>HTML / HTML5 / HTML Completo e Profissional;</p>
+        <p>CSS;</p>
+        <p>Javascript;</p>
+        <p>C++;</p>
+        <p>QT Creator;</p>
+        <p>PHP e My SQL;</p>
+        <p>Unity e C#;</p>
+        <p>Photoshop;</p>
+        <p>Flash;</p>
+        <p>Arduino.</p>
+
+    </article>
+    
+</body>
+
+</html>
