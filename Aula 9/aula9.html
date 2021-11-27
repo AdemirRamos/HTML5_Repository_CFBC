@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - "Tag aside" da Nova Semântica</title>
+
+    <style>
+
+        p {
+            font-size: 10px;
+        }
+
+        aside {
+            border: 1px solid #000;
+            padding: 15px;
+            margin-right: 5px;
+            border-radius: 10px;
+            background-color: #333;
+            color: #fff;
+            width: 350px;
+            height: 500px;
+            float: left;
+            /*Pesquisar.*/
+        }
+
+        a {
+            color: white;
+        }
+
+        aside > a {
+            display: block;
+        }
+
+        #esquerda {
+            float: right;
+            border: 1px solid #000;
+            padding: 15px;
+            margin-right: 5px;
+            border-radius: 10px;
+            background-color: #333;
+            color: #fff;
+            width: 350px;
+            height: 500px;
+        }
+
+        /*Caso se deseje os dois textos na mesma altura e com o "p" entre eles, basta usar "class" e seletores.*/
+        /*Eu decidi não fazer isso pois achei o resultado visual da página interessante.*/
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--"aside" também é uma "tag de seção" que faz parte da nova semântica do HTML5.-->
+
+    <p>Neste curso de HTML do CFB Cursos, vamos aprender todas as "tags" válidas do HTML5.</p>
+
+    <aside>
+
+        <!--"aside": display: block; categoria: fluxo e seção; contido por: fluxo; filhos: fluxo; DOM Interface: uses HTMLElement.-->
+        <!--"aside" representa uma seção, dentro da página, que vai possuir um conteúdo diretamente relacionado ao conteúdo principal da página ou relacionado ao local onde se encontra o "aside". Normalmente, "aside", é disposto como uma "caixa lateral". "aside" e pode conter, também, um elemento de navegação da página diferente do elemento principal, portanto, dentro de "aside", se pode ter um menu ("nav") que será diferente do menu principal da página. "aside" também pode ser uma citação ou explicação de algo em um texto ou parte de um texto.-->
+        
+        <h3>NOTA:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum officiis quaerat eligendi quos, iure similique ex asperiores delectus, velit, veritatis aut qui cupiditate atque vitae voluptatem ea tenetur eaque.</p>
+
+        <a href="http://www.youtube.com/cfbcursos">Canal no YouTube</a>
+        <a href="#">Lorem</a>
+        <a href="#">Lorem</a>
+
+    </aside>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, facere sapiente ab adipisci fugiat voluptas ut distinctio quae pariatur, facilis nostrum nemo nesciunt, mollitia ex natus quo iste praesentium expedita.</p>
+
+    <aside id="esquerda">
+
+        <h3>Lorem</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum officia quam? Aliquam harum, labore iure accusantium voluptate recusandae? Eum, officiis asperiores. A odit facere quisquam non ut voluptatibus ipsa.</p>
+
+    </aside>
+
+</body>
+
+</html>
