@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - "Tag audio" Inserindo Músicas e Sons Na Página</title>
+
+</head>
+
+<body>
+
+    <audio autoplay>
+
+        <!--Quando um navegador não tiver suporto a áudio, usemos a mensagem a seguir:-->
+        <p>O seu navegador não oferece suporte à "tag audio".</p>
+
+    </audio>
+    <!--"autoplay" é um parâmetro "boolean", por isso, ao ser inserido, ele já estará configurado.-->
+
+    <audio src="Mídia/trigun.mp3" autoplay controls muted loop></audio>
+    <!--A depender do navegador, o "autoplay" pode não funcionar.-->
+    <!--"controls" exibe a barra de controles do áudio.-->
+    <!--"muted" deixa o áudio mutado por padrão.-->
+    <!--"loop" gera uma repetição infinita do áudio.-->
+    <!--É possível adicionar um valor ao "loop" para marcar quantas vezes o áudio será repetido.-->
+
+    <!--"Tag audio": display: none; categoria: fluxo, fraseado e incorporado; caso haja "src", não há filhos, caso haja, há filhos.-->
+    <!--A "tag source" é o filho de "audio".-->
+
+</body>
+
+</html>
