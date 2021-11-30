@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://www.cfbcursos.com.br/">
+    <title>Aula 12 - "Tag base" (Apontamento de Local Padrão)</title>
+
+</head>
+
+<body>
+    
+    <!--Basicmanete, essa "tag" cria um apontamento-base para os atributos "src" ou "href" ou qualquer outro atributo que precise da referência de um local para um arquivo seja ele proveniente do nosso "site" ou externo (proveniente de outro "site").-->
+
+    <!--"Tag base": display: none; categoria: metadados; contido por: <head>; filhos: nenhum filho (vazio); DOM Interface: uses HTMLElment:
+        HTMLBaseElement {
+            attribute DOMString href;
+            attribute DOMString target;
+        }-->
+
+    <!--Por não ter filhos, "base" não precisa ser fechada.-->
+    <!--Não se usa mais de uma "base" para uma página.-->
+
+    <a href="cursos.html">Cursos</a>
+
+    <!--Uma vez que temos a "base" definida, esse "link" acima irá procurar na página, referenciada pela "base", por "cursos.html."-->
+    <!--Como a "base" já fora definida, não é preciso escrever o "link" desta maneira: "http://www.cfbcursos.com.br/cursos.html".-->
+
+</body>
+
+</html>

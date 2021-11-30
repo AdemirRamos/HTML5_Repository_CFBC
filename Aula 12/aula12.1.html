@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - "Tag base" (Apontamento de Local Padrão)</title>
+    <base href="Imagens/">
+    <!--É possível usar o parâmetro "target" com "base".-->
+    <!--Também é possível redefinir o "target" (da maneira) "inline" para "self" ou "blank".-->
+
+    <style>
+
+        a {
+            display: block;
+            margin-top: 5px;
+            color: purple;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--Basicmanete, essa "tag" cria um apontamento-base para os atributos "src" ou "href" ou qualquer outro atributo que precise da referência de um local para um arquivo seja ele proveniente do nosso "site" ou externo (proveniente de outro "site").-->
+
+    <!--"Tag base": display: none; categoria: metadados; contido por: <head>; filhos: nenhum filho (vazio); DOM Interface: uses HTMLElment:
+        HTMLBaseElement {
+            attribute DOMString href;
+            attribute DOMString target;
+        }-->
+
+    <!--Por não ter filhos, "base" não precisa ser fechada.-->
+    <!--Não se usa mais de uma "base" para uma página.-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ut, esse deserunt illum amet aliquam aperiam inventore dolor aliquid quos cum nesciunt natus ratione beatae provident itaque optio officia nihil!</p>
+
+    <img src="lofi2.jpg" alt="Desenho de uma menina triste - a imagem possui um tom predominantemente roxo.">
+
+    <!--Aqui temos o mesmo caso: como a "base" já foi referenciada, não é preciso escrever o "link" por completo.-->
+    <!--O "link", completo, ficaria assim: "Imagens/triste2.jpg".-->
+
+    <a href="../aula12.2.html">Segunda Página.</a>
+
+    <!--Como "base" já está definida, não é preciso o "link" completo, apenas o caminho de volta para o novo endereço.-->
+    <!--É preciso usar "../".-->
+
+</body>
+
+</html>
