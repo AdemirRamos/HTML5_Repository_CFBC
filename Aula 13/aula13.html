@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13 - "Tag bdo" (Direção do Texto)</title>
+
+</head>
+
+<body>
+
+    <!--O atributo de direcionamento do texto pode ser colocado direto na "tag p".-->
+    <p dir="rtl">CFB Cursos - Curso de HTML Completo e Profissional.</p>
+    <!--Sentido do texto: "ltr": 'left to right'; "rtl": 'right to left'.-->
+    <!--O parâmetro "dir=''" posiciona o texto na tela (de acordo com "ltr" e "rtl").-->
+
+    <!--"Tag bdo": display: inline; categoria: fluxo e fraseado; filhos: elementos de fluxo.-->
+
+    <bdo dir="rtl">CFB Cursos - Curso de HTML Completo e Profissional.</bdo>
+    <!--Na "tag bdo", o parâmetro "dir=''" controla a direção do texto (não o seu posicionamento).-->
+    <!--Alguns idiomas, como o hebraico, são lidos da direita para a esquerda. Nesses casos, a "tag bdo" é útil.-->
+    <!--Curiosidade: ao ser armazenado, o texto é invertido; porém, ao ser exibido, ele é exibido na sua ordem normal.-->
+
+    <p>CFB Cursos - <bdo dir="rtl">Curso de HTML</bdo> Completo e Profissional.</p>
+
+</body>
+
+</html>
