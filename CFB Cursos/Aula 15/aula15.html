@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15 - "Tag br", Quebra de Linha</title>
+
+    <style>
+
+        p.parágrafo {
+            line-height: 0%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--"Tag br": display: inline; categoria: fluxo e fraseado; contido por: fraseado; filhos: none (vazio).-->
+    <!--Toda "tag" que tiver filhos, terá um fechamento.-->
+    <!--A "tag br" deve ser usada somente para quebrar linhas de texto, não de conteúdo.-->
+    <!--"br" não deve ser usada para a separação de grupos temáticos dentro de um parágrafo.-->
+    <!--Caso seja necessário quebrar linhas entre elementos, use a "tag p" pois essa é "box-level".-->
+    <!--"br" é uma "tag inline", só para reforçar.-->
+    <!--Ao quebrar linhas de conteúdo com a "tag p", haverá muito espaço entre uma linha e outra - o CSS resolverá esse problema.-->
+    <!--Acima há uma demonstração de como se fazer essa "correção" por CSS3.-->
+    <!--"br" também pode ser usado para gerar um espaço maior entre "p's" - embora o CSS continue sendo mais recomendável para isso.-->
+
+    <p class="parágrafo"><a href="#">Curso de CSS.</a></p>
+    <p class="parágrafo"><a href="#">Curso de Javascript.</a></p>
+    <p class="parágrafo"><a href="#">Curso de PHP.</a></p>
+    <p class="parágrafo"><a href="#">Curso de C++.</a></p>
+    
+    <p><label for="">Selo</label></p>
+    <p><button>Botão</button></p>
+    
+    <p>
+        
+        Vou te contar <br>
+        Os olhos já não podem ver <br>
+        Coisas que só o coração pode entender <br>
+        Fundamental é o mesmo o amor <br>
+        É impossível ser feliz sozinho.
+
+    </p>
+
+</body>
+
+</html>
