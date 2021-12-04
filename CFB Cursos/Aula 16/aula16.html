@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 - Tag button</title>
+
+    <style>
+
+        button#botão {
+            background-color: #000;
+            color: #fff;
+            width: 150px;
+            height: 40px;
+            border: 2px #0a0 solid;
+            border-radius: 15px;
+        }
+
+        button#botão:hover {
+            background-color: #fff;
+            color: #000;
+            width: 150px;
+            height: 40px;
+            border: 2px #000 solid;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--"button" é simplesmente um botão.-->
+    <!--button: display: inline; categoria: fluxo, fraseado e interativo; contido por: fraseado; filhos: conteúdo / texto.-->
+
+    <!--Tipos para um botão: "button", "menu", "reset", "submit".-->
+    <!--O tipo "button" faz com que o botão não tenha ação pré-determinada.-->
+    <!--"form=''" indica um formulário ao qual o botão estará relacionado.-->
+    <!--"submit" faz envio de informações.-->
+    <!--"reset" limpa os campos do formulário.-->
+
+    <button type="button" form="nome_do_formulário" onclick="alert('Fessor Bruno.')" id="botão">
+
+        CFB Cursos
+
+    </button>
+
+</body>
+
+</html>
