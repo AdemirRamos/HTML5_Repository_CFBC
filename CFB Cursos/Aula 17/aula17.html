@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17 - Tag canvas</title>
+
+    <style>
+
+        canvas#tela {
+            border: 1px solid black;
+        }
+
+    </style>
+
+    <script>
+
+        function desenhar() {
+            var canvas = document.getElementById('tela')
+            var ctx = canvas.getContext('2d')
+            ctx.fillRect(25, 25, 100, 100)
+            //Acima, o 2d indica que o desenho a ser feito será 2d.
+            //Já "fillRect", indica as posições onde será feito o desenho.
+        }
+
+        window.addEventListener('load', desenhar)
+
+    </script>
+
+</head>
+
+<body>
+    
+    <!--Basicamente, a propriedade "canvas" representa uma área, uma tela "bitmap".-->
+    <!--"Bitmap", por sua vez, serve para renderizar gráficos ou desenhar qualquer coisa dentro da "canvas".-->
+    
+    <!--"canvas": display: block; categoria: fluxo, fraseado, incorporado; contido por: onde incorporado, é esperado; filhos: transparentes (somente são exibidos caso o "browser" não dê suporte ao elemento "canvas". Pode ser um texto de aviso).-->
+
+    <!--Para desenhar dentro da "canvas", é necessário usar o JS. Os elementos da "canvas" só podem ser manipulados através do JS.-->
+
+    <canvas id="tela" width="500px" height="500px">
+
+        Seu navegador não possui suporte ao elemento "canvas".
+
+    </canvas>
+
+    <!--Abaixo, temos outra maneira de ativar a função "desenhar".-->
+    <!--<script>desenhar()</script>-->
+
+</body>
+
+</html>
