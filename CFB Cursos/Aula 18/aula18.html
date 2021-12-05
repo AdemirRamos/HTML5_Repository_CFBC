@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 - Tag code e pre</title>
+
+    <style>
+
+        pre {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--A "tag code" serve, basicamente, para destacar um trecho de código / diferenciar um texto comum de um código (e vice-versa).-->
+    <!--A "tag pre", por sua vez, é uma "tag" de pré-formatação. Ela exibe / renderiza o texto exatamente como ele foi digitado.-->
+
+    <p>O segmento de código a seguir representa o corpo básico de um programa em C.</p>
+
+    <pre>
+
+        <code>
+
+            #include &lsaquo;studio.h&rsaquo;
+            #include &lsaquo;stdlib.h&rsaquo;
+            #include &lsaquo;locale.h&rsaquo;
+            int main(){
+                setlocale(lC_ALL, "Portuguese");
+                printf("Código básico em C.");
+                system("pause");
+                return 0
+            }
+
+            <!--A "tag pre" fará com que o seu conteúdo seja exibido exatamente como está digitado.-->
+            <!--"Tag pre": display: block; categoria: fluxo; contida por: fluxo; filhos fraseado.-->
+
+        </code>
+    
+        <!--Ao usar a "tag code", o conteúdo contido por ela receberá um destaque.-->
+        <!--"Tag code": display: inline; categoria: fluxo e fraseado; contido por: fraseado; filhos: fraseado.-->
+        <!--"pre" deve receber code dentro de si e não o contrário, esse é o mais indicado.-->
+
+    </pre>
+
+    <p>Os cabeçalhos utilizados podem variar de acordo com os recursos que se deseja utilizar no programa, então, stdlib e locale podem ser omitidos como parte do código básico, assim como a função setlocale.</p>
+
+</body>
+
+</html>
