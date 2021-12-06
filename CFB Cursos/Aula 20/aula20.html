@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 20 - "Tags details" e "summary"</title>
+
+    <style>
+
+        /*Mudando a cor do indicador do "summary":*/
+        summary::-webkit-details-marker { /*Por alguma razão, comigo não funciona.*/
+            color: #f00;
+            /*Seta para baixo.*/
+        }
+
+        details[open] summary::-webkit-details-marker { /*Por alguma razão, comigo não funciona.*/
+            color: #00f;
+            /*Seta para cima.*/
+        }
+
+        details > article { /*O sinal de maior (>), aqui, é opcional.*/
+            background-color: rgba(128, 128, 128, 0.589);
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--A "tag details" vai exibir um "saiba mais" na tela. Dentro do "saiba mais" ("details") você pode alocar mais informações.-->
+    <!--"details": display: block; categoria: fluexo e interativo; contido por: fluxo; filhos: <legend>.-->
+    <!--"open" é um atributo "booleano", por isso, não é preciso adicionar "true" ou "false" pois "true" já é o resultado padrão.-->
+    <!--Ao adicionar "open" a caixa de "details" já virá aberta.-->
+    <!--P. S.: "open" é um parâmetro de "details".-->
+
+    <!--"summary" vai ser o título do "details".-->
+    <!--"summary" sempre será o primeiro filho de "details".-->
+    <!--Dentro de "summary", pode-se adicionar qualquer conteúdo.-->
+
+    <!--Para que seja exibido e contido por "summary", o seu conteúdo deve estar alinhado com "summary".-->
+
+    <details open>
+        
+        <summary>Cursos do Nosso Canal</summary>
+        
+        <article>
+
+            <p>HTML Completo e Profissional;</p>
+            <p>HTML5;</p>
+            <p>CSS;</p>
+            <p>Javascript;</p>
+            <p>C++;</p>
+            <p>Qt Creator;</p>
+            <p>Arduino;</p>
+            <p>PHP / My SQL;</p>
+            <p>Flash;</p>
+            <p>Photoshop.</p>
+
+        </article>
+
+        <article>
+
+            <p>HTML Completo e Profissional;</p>
+            <p>HTML5;</p>
+            <p>CSS;</p>
+            <p>Javascript;</p>
+            <p>C++;</p>
+            <p>Qt Creator;</p>
+            <p>Arduino;</p>
+            <p>PHP / My SQL;</p>
+            <p>Flash;</p>
+            <p>Photoshop.</p>
+
+        </article>
+
+    </details>
+
+    <article>
+
+        <p>HTML Completo e Profissional;</p>
+        <p>HTML5;</p>
+        <p>CSS;</p>
+        <p>Javascript;</p>
+        <p>C++;</p>
+        <p>Qt Creator;</p>
+        <p>Arduino;</p>
+        <p>PHP / My SQL;</p>
+        <p>Flash;</p>
+        <p>Photoshop.</p>
+
+    </article>
+
+</body>
+
+</html>
