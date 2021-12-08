@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22 - "Tag dialog"</title>
+
+    <script>
+
+        function abrir() {
+            document.getElementById('diálogo').setAttribute('open', 'open') //O segundo atributo também poderia estar vazio.
+        }
+
+        function fechar() {
+            document.getElementById('diálogo').removeAttribute('open')
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <!--Essa "tag", basicamente, cria uma caixa de diálogo para o usuário.-->
+    <!--"Tag dialog": categoria: fluxo; contido por: fluxo; filhos: qualquer elemento.-->
+    <!--"dialog" possui somente um atributo (do tipo "boolean").-->
+    <!--"dialog" pode ser manipulado através do JS.-->
+
+    <button onclick="abrir()">Abrir</button>
+    <button onclick="fechar()">Fechar</button>
+    <dialog open id="diálogo">
+
+        <p><dfn title="Linguagem de Marcação Para a Web.">HTML</dfn> ("Hypertext Markup Language"): é uma linguagem de marcação utilizada na construção de "páginas web".</p>
+
+        <p><dfn><abbr title="Formatação Para Páginas Web.">CSS</abbr></dfn> ("Cascading Style Sheets"): recurso utilizado para adicionar estilos / formatações a um "documento web".</p>
+
+    </dialog>
+
+</body>
+
+</html>
