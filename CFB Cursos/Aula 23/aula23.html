@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23 - "Tag div" (Parte 1)</title>
+
+    <style>
+
+        .cursos {
+            display: flex;
+            /*Conferir.*/
+        }
+
+        .curso {
+            background-color: gray;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--Basicamente, "tag div" é um container para qualquer elemento, um componente de organização.-->
+    <!--"div" nos ajuda a posicionar elementos dentro de uma página.-->
+    <!--"div" é um container genérico.-->
+    <!--"div": display: block; categoria: fluxo; contido por: fluxo; filhos: fluxo.-->
+
+    <article>
+
+        <div>
+
+            <h1>CFB Cursos</h1>
+            <p>O CFB Cursos é um canal de cursos de informática, voltado para cursos de desenvolvimento web e/ou "desktop".</p>
+
+            <h2>Cursos do Canal:</h2>
+
+        </div>
+
+        <div class="cursos">
+
+            <div class="curso">
+
+                <h3>HTML</h3>
+                <p>Existem três playlists de HTML, atualmente, no canal: HTML, HTML5, HTML Completo e Profissional.</p>
+                <a href="#" target="_blank">Confira</a>
+
+            </div>
+
+            <div class="curso">
+
+                <h2>C++ / Qt Creator</h2>
+
+                <p>Embora sejam duas playlists separadas, esses cursos formam uma dupla. Você, primeiro, aprende a programar em C++, depois, aprende a curar programas no padrão Windows com o "framework" 'Qt Creator'.</p>
+
+                <a href="#">Confira</a>
+
+            </div>
+
+            <div class="curso">
+
+                <h2>Arduino</h2>
+
+                <p>Neste curso você vai aprender a controlar dispositivos de "hardware" como sensores e motres, para criar robôs ou automatizar tarefas, tudo programando com uma linguagem derivada do C++.</p>
+
+                <a href="#">Confira</a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</body>
+
+</html>
