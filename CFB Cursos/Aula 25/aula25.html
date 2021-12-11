@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 25 - "Tag div" (Parte 2)</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            /*Checar.*/
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        a {
+            display: block;
+            line-height: 2;
+            color: coral;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .main {
+            border: 1px dotted red;
+            margin: auto;
+            width: 960px;
+        }
+
+        #cabeçalho, #corpo, #footer {
+            border: 1px dotted #aaa;
+        }
+
+        #cabeçalho {
+            position: absolute;
+            /*"static" é o valor padrão do parâmetro acima.*/
+            /*Já "absolute" nos permite configurar a posição do objeto com base nas propriedades "top", "left", "right" e "bottom".*/
+            
+            top: 30px;
+            left: 425px;
+            
+            /*Ao definir valores para "top", "left", "right" e "bottom", o objeto, caso seja "box-level", deixará de ser "box-level".*/
+            /*A propriedade "position" sempre posicionará o objeto em relação à janela desde que o "pai" seja "static".*/
+            /*Caso se deseje posicionar o elemento em relação ao "pai", usamos o valor "relative".*/
+
+            width: 300px;
+            height: 100px;
+        }
+
+        #corpo {
+            position: absolute;
+            top: 310px;
+            left: 0px;
+            width: 100%;
+            height: 470px;
+        }
+
+        #caixa_1, #caixa_2, #caixa_3 {
+            width: 150px;
+            height: 70px;
+        }
+
+        #caixa_1 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: burlywood;
+            color: coral;
+            text-shadow: 1px 1px 1px black;
+            font-size: 18px;
+            border: 1px solid purple;
+        }
+
+        #caixa_2 {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background-color: skyblue;
+            color: coral;
+            text-shadow: 1px 1px 1px black;
+            font-size: 18px;
+            border: 1px solid purple;
+        }
+
+        #caixa_3 {
+            /*O valor "fixed" sempre levará em consideração a janela.*/
+            /*Mesmo que se role a página, o elemento com valor "fixed" não sairá do lugar.*/
+            /*Se pode usar as propriedades "top", "left", "bottom" e "right" em combinação com "fixed".*/
+            position: fixed;
+            top: 0px;
+            left: 2px;
+            background-color: coral;
+            color: skyblue;
+            text-shadow: 1px 1px 1px black;
+            font-size: 18px;
+            border: 1px solid purple;
+            z-index: 100;
+            /*A propriedade acima traz o seu elemento correspondente para frente do que quer que esteja na tela.*/
+        }
+
+        #footer {
+            position: absolute;
+            top: 200px;
+            left: 450px;
+            width: 100%;
+            height: 80px;
+            background-color: darkslateblue;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="cabeçalho">
+
+        <div class="main">
+
+            <h1>CFB Cursos</h1>
+
+        </div>
+
+    </div>
+
+    <div id="corpo">
+
+        <div class="main">
+
+            <div id="caixa_1">
+
+                <h2>Caixa 1</h2>
+
+            </div>
+
+            <div id="caixa_2">
+
+                <h3>Caixa 2</h3>
+
+            </div>
+
+            <div id="caixa_3">
+
+                <h4>Caixa 3</h4>
+
+            </div>
+
+            <p>Nesta aula, vamos aprender a manipular "divs" usando "position", "top", "left", "width" e "height".</p>
+            <p>Se ainda não for iscrito no nosso canal, se inscreva e ative o sininho.</p>
+            <p>Siga-nos nas nossas redes sociais - os endereços estão na descrição do vídeo.</p>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <div class="main">
+
+            <a href="www.youtube.com/cfbcursos">Canal no YouTube.</a>
+            <a href="cfbcursos.com">Site do CFB Cursos.</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
