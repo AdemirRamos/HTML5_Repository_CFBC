@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 - Formulário (Parte 2)</title>
+
+    <style>
+
+        input {
+            display: block;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        div#botões {
+            display: flex;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form_login" method="get" enctype="">
+        
+        <!--Se trata de um container que representa uma coleção de elementos associados a um formulário.-->
+
+        <!--"form": display: block; categoria: fluxo; contido por: fluxo; filhos: fluxo.-->
+
+        <!--action: URL com o arquivo que irá receber os dados enviados;-->
+
+        <!--autocomplete: autocompletar campos ativados;-->
+
+        <!--enctype: codificação (tipo) dos dados enviados;-->
+
+        <!--methtod: método de envio dos dados (get ou post);-->
+
+        <!--name: nome do formulário;-->
+
+        <!--novalidade: desabilita a validação pelo "browser";-->
+
+        <!--target: como a página de destino (action) será aberta.-->
+
+        <label for="">Nome:</label>
+        
+        <!--Etiqueta / rótulo / nome do elemento que o procede. - "label" serve para representar uma legenda.-->
+
+        <!--label: display: inline; categoria: fluxo, fraseado e interativo; contido por: fraseado; filhos: nenhum.-->
+
+        <!--Por não ter filhos, a "tag input" não tem fechamento.-->
+
+        <input type="text" name="form_name" value="Digite o seu nome aqui.">
+        
+        <!--Insere uma caixa de texto no formulário.-->
+
+        <!--Parâmetros de "input": "type": determina o tipo do "input"; "name": determina o nome do "input".-->
+
+        <!--É possível criar um "value padrão" para este campo do formulário.-->
+        <!--Para isso, basta adicionar o parâmetro "value" (com o seu respectivo texto) ao "input" do tipo texto.-->
+
+        <div id="botões">
+
+        <!--Dois dos "inputs" abaixo são botões com um comportamento específico / pré-definido.-->
+        <!--Através do parâmetro "value", podemos mudar o conteúdo de texto que vai dentro dos botões.-->
+
+        <input type="submit" name="form_submit">
+
+        <!--O "input" do tipo "submit" esse elemento é responsável pelo envio dos dados.-->
+        <!--Os valores digitados no formulário serão enviados para a página especificada no parâmetro "action" na "tag form".-->
+        <!--Os dados devem ser enviados para um arquivo PHP.-->
+        <!--Já o parâmetro "method" diz respeito a como será feita a passagem dos dados para a página-destino.-->
+        <!--O método "get", em "method", faz a passagem das informações no formulário para a página especificada em "action"-->
+        <!--Nesse caso, a página-destino será a mesma página do formulário.-->
+        <!--O resultado pode ser conferido na URL da página.-->
+        <!--As informações digitadas serão relacionadas ao parâmetro "value".-->
+        <!--Caso o valor de "method" seja alterado para "post", o método de passagem será interno. - Não aparecerá na URL.-->
+        <!--Quando usar "get" ou "post":-->
+        <!--Com um formulário de cadastro, é recomendável o uso de "post";-->
+        <!--Caso se deseje usar os dados do formulário de maneira mais rápida e fácil, se deve usar o método "get".-->
+
+        <input type="reset" name="form_reset">
+
+        <!--Já o "input" do tipo "reset" faz a limpeza dos campos do formulário.-->
+        <!--O "input" do tipo "reset" faz com que o campo do nome volte ao seu "value" padrão.-->
+        <!--Caso não haja um "value" padrão, o "reset" vai apagar o que está dentro da caixa de texto.-->
+
+        <input type="button" name="form_button" value="Botão">
+
+        <!--Já o "input" do tipo "button" não possui um comportamento pré-definido.-->
+        <!--Para definir qual será o comportamento de um "input" do tipo "button", é necessário criar um "script".-->
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
