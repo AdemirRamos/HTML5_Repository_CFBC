@@ -37,7 +37,7 @@
     
     <form action="#" name="form" method="get">
 
-        <label for="">Username:</label>
+        <label for="">Nome de Usuário:</label>
         <input type="text" name="username" class="espaço" maxlength="20" size="25">
 
         <!--"size" determina o tamanho do campo das caixas onde irão os caracteres.-->
@@ -55,7 +55,7 @@
         <input type="checkbox" name="football" class="same_line">Futebol
         <input type="checkbox" name="basket" class="same_line">Basquete
         <input type="checkbox" name="swimming" class="same_line">Natação
-        <input type="checkbox" name="esporte" class="same_line" value="Vôlei">Vôlei
+        <input type="checkbox" name="esporte" class="same_line" value="Vôlei" checked>Vôlei <br>
 
         <!--Quando algo for digitado dentro do "input password", os caracteres não serão exibidos;-->
         <!--Em seu lugar, serão mostrados símbolos.-->
@@ -64,7 +64,18 @@
         <!--Eles irão para a URL da página com a marcação "on".-->
         <!--Caso se adicione um "value" a um "input checkbox", o valor de "value" será passado para a URL - por conta do método "get".-->
 
-        <input type="submit" name="entrar" value="Entrar">
+        <label for="">Possui Carro:</label>
+        <input type="radio" name="car" value="Sim" class="same_line" checked>Sim
+        <input type="radio" name="car" value="Não" class="same_line">Não
+
+        <!--"radio": botões circulares que podem ser selecionados.-->
+        <!--Para que os "radios" funcionem em conjunto, é preciso se dar o mesmo nome para todos eles.-->
+        <!--Caso os "radios" tenham nomes diferentes, eles não trabalharão em conjunto, mas sim de forma independente.-->
+        <!--E, caso os dois (ou mais) "inputs radio" estejam com nomes diferentes, será possível marcar mais de um ao mesmo tempo.-->
+        <!--Também existe o parâmetro ("boolean") "checked". Esse parâmetro faz com que o "radio" que o recebe já venha marcado.-->
+        <!--"checked" também funciona com os "inputs checkbox".-->
+
+        <input type="submit" name="entrar" value="Enviar Dados">
 
     </form>
 
