@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 34 - Formulário (Parte 4 - "date", "time" e "datetime-local")</title>
+
+    <style>
+
+        form {
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #eee;
+            padding: 15px;
+        }
+
+        .quebra_de_linha {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="">
+
+        <label for="">Hora:</label>
+        <input type="time" name="form_time" class="quebra_de_linha" min="09:00" max="17:00" required>
+
+        <!--O "input" do tipo "time" já vem com opções para facilitar a inserção da hora.-->
+        <!--Lembrando, mais um vez: por conta do método "get", todo dado enviado via botão "Enviar Dados", vai para a URL da página.-->
+        <!--Com o "input time" também se pode usar os parâmetros "min" e "max" para definir uma hora mínima ou máxima.-->
+        <!--Ao definir "min" e "max", o formulário exibirá uma mensagem de notificação caso o horário digitado seja "inválido".-->
+        <!--O parâmetro ("boolean")"required" serve para tornar o preenchimento do campo onde se encontra obrigatório.-->
+        <!--"Required" também exibirá uma mensagem de erro caso os dados sejam enviados sem que este campo esteja preenchido.-->
+
+        <label for="">Data:</label>
+        <input type="date" name="form_date" class="quebra_de_linha" min="2021-06-03" max="2021-06-08">
+
+        <!--O "input date" já vem com opções para facilitar a inserção da data.-->
+        <!--O "input date" também trabalha com os parâmetros "min" e "max". As datas devem ir na seguinte ordem: "ano-dia-mês".-->
+        <!--Ao definir "min" e "max", o "input date" só disponibilizará opções de preenchimento dentro do escopo de "min" e "max".-->
+
+        <label for="">Data e Hora:</label>
+        <input type="datetime-local" name="form_date_time" class="quebra_de_linha">
+
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+
+</body>
+
+</html>
