@@ -16,6 +16,12 @@
             margin-bottom: 15px;
         }
 
+        .same_line {
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 20px;
+        }
+
         form {
             border: 1px solid black;
             padding: 10px;
@@ -42,12 +48,23 @@
         <label for="">Senha:</label>
         <input type="password" name="senha" class="espaço" maxlength="20" size="15">
 
+        <!--"checkbox" é uma caixa de seleção.-->
+        <!--Cada um dos elementos pode ter um nome ou todos podem ter nomes diferentes.-->
+
+        <label for="">Esportes:</label>
+        <input type="checkbox" name="football" class="same_line">Futebol
+        <input type="checkbox" name="basket" class="same_line">Basquete
+        <input type="checkbox" name="swimming" class="same_line">Natação
+
         <!--Quando algo for digitado dentro do "input password", os caracteres não serão exibidos;-->
         <!--Em seu lugar, serão mostrados símbolos.-->
 
         <input type="submit" name="entrar" value="Entrar">
 
     </form>
+
+    <!--Se pode aplicar mais de uma classe a um mesmo elemento (não as se separam por vírgula).-->
+    <!--Exemplo: <div class="primeira segunda">.-->
 
 </body>
 
