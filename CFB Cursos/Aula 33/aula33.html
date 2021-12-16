@@ -12,6 +12,10 @@
             display: block;
         }
 
+        .espaço {
+            margin-bottom: 15px;
+        }
+
         form {
             border: 1px solid black;
             padding: 10px;
@@ -28,7 +32,19 @@
     <form action="#" name="form" method="get">
 
         <label for="">Username:</label>
-        <input type="text" name="username">
+        <input type="text" name="username" class="espaço" maxlength="20" size="25">
+
+        <!--"size" determina o tamanho do campo das caixas onde irão os caracteres.-->
+        <!--O parâmetro "maxlength" estipula um tamanho máximo de caracteres para serem digitados.-->
+
+        <!--"password" é "input" para trabalhar com senhas.-->
+
+        <label for="">Senha:</label>
+        <input type="password" name="senha" class="espaço" maxlength="20" size="15">
+
+        <!--Quando algo for digitado dentro do "input password", os caracteres não serão exibidos;-->
+        <!--Em seu lugar, serão mostrados símbolos.-->
+
         <input type="submit" name="entrar" value="Entrar">
 
     </form>
