@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 35 - Formulário (Parte 5 - "month", "week" e "hidden")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get">
+
+        <label for="">Mês:</label>
+        <input type="month" name="form_month" class="espaço">
+
+        <!--O "input month" retorna um mês de uma ano. O botão já oferece uma janela para auxiliar na escolha do mês.-->
+
+        <label for="">Semana:</label>
+        <input type="week" name="form_week" class="espaço">
+
+        <!--O "input week" retorna uma semana do ano. O botão já oferece uma janela para auxiliar na escolha da semana.-->
+
+        <input type="hidden" name="canal" value="cfbcursos">
+        <input type="hidden" name="curso" value="html5">
+
+        <!--O "input hidden" é um elemento que não será visível na tela.-->
+        <!--Ele pode ser útil para transportar informações de um formulario para outro formulário.-->
+        <!--Ou mesmo pode ser usado para se passar informações que só devem aparecer para quem as for manipular (e não para o usuário).-->
+
+        <input type="submit" name="form_submit" value="Enviar Dados" class="">
+
+    </form>
+    
+</body>
+
+</html>
