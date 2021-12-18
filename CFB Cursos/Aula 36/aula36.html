@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 36 - Formulário (Parte 6 - "input color", "email" e "image")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get">
+
+        <label for="">Selecione Uma Cor:</label>
+        <input type="color" name="form_colour" class="espaço">
+        
+        <!--O "input color" permite que o usuário selecione uma cor.-->
+        <!--Assim como em outros "inputs", uma interface será apresentada ao usuário para auxiliá-lo na escolha.-->
+        <!--Ao enviar os dados do formulário, o código hexadecimal da cor será salvo na URL da página (por conta de "method get").-->
+        <!--O "input color" foi adicionado a partir do HTML5.-->
+
+        <label for="">E-mail:</label>
+        <input type="email" class="espaço" name="form_email">
+        
+        <!--Já o "input email" é um campo personalizado para receber e-mails.-->
+        <!--Esse "input" já conta, por definição, com um validação de e-mails.-->
+
+        <label for="">Imagem:</label>
+        <input type="image" class="espaço" name="form_image" src="Imagens/Songs For The Deaf (All Red - P).png">
+
+        <!--O "input image" nos permite enviar uma imagem para o formulário, porém a imagem será um botão.-->
+        <!--Para adicionar a imagem, é preciso se definir a sua "src".-->
+        <!--Ao se enviar a imagem, o botão também enviará o seu nome assim como as posições X e Y da imagem.-->
+        <!--Esse "input image" pode ser uma substituição (personalizada) para o "input submit".-->
+
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+    
+</body>
+
+</html>
