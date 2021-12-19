@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 37 - Formulário (Parte 7 - "input tel", "number" e "search")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div.espaço:hover {
+            color: red;
+        }
+
+        div.espaço:hover > p {
+            display: block;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 128, 0.527);
+            padding: 5px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            font-weight: bolder;
+            width: 77%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get">
+
+        <label for="">Telefone</label>
+        <input type="tel" name="form_telephone" class="espaço" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+
+        <!--O "input tel" é um campo especialmente feito para receber números de telefone.-->
+        <!--Através do parâmetro "placeholder", podemos definir o padrão do telefone passado para esse campo.-->
+        <!--Já o parâmetro "pattern" serve para delimitar os campos, definir o padrão e os números permitdos nesses campos.-->
+        <!--As barras invertidas servem para poder se usar parênteses;-->
+        <!--Entre colchetes, vão os números disponíveis para se alocar naquele campo;-->
+        <!--E, entre chaves, vão os números disponíveis para aquela área de números.-->
+        <!--O nove entre colchetes ([9]{1}) é um número fixo (para celulares).-->
+
+        <div class="espaço">
+
+            Informações sobre a senha.
+
+            <p>A sua senha deve conter, no máximo, 8 caracteres (entre maiúsculas e minúsculas) e / ou números entre 0 e 9.</p>
+
+        </div>
+
+        <!--Criando uma senha com padrão:-->
+
+        <label for="">Senha:</label>
+        <input type="password" name="form_password" class="espaço" pattern="[a-zA-Z0-9]{8}">
+
+        <label for="">Escolha Um Número:</label>
+        <input type="number" name="form_number" class="espaço" step="2" min="0" max="10">
+
+        <!--O "input number" cria um campo personalizado para receber números.-->
+        <!--A interface do campo é apropriada para manipulação de números.-->
+        <!--O parâmetro "step" indica o passo da contagem de números das barras da caixa.-->
+
+        <label for="">Pesquisa:</label>
+        <input type="search" name="form_search" class="espaço">
+
+        <!--O "input search" é um campo de texto para pesquisas.-->
+
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+
+</body>
+
+</html>
