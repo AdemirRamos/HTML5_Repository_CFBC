@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 38 - Formulário (Parte 8 - "input file" e "input URL")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get" enctype="multipart/form-data">
+
+        <label for="">Selecione O (s) Arquivo (s):</label>
+        <input type="file" name="form_file" class="espaço" multiple accept=".jpg, .png, .gif">
+
+        <!--O "input file" permite fazer o envio de um arquivo para o formulário.-->
+        <!--Por conta do método "get", o arquivo enviado irá para a URL da página.-->
+        <!--Por definição, não é possível selecionar mais do que um arquivo.-->
+        <!--Porém, com o parâmetro "multiple", se torna possível selecionar e enviar mais de um arquivo de uma vez só.-->
+        <!--"Multiple" é do tipo "boolean".-->
+        <!--Através do parâmetro "accept", se pode definir quais tipos de arquivo podem ser enviados.-->
+        <!--Atente-se ao "enctype" do "form" e sua configuração.-->
+        <!--Exemplo de opções de configuração para "accept":-->
+        <!--"accept: .doc, .docx, application/msword, image/*, .pdf, .jpg, .gif, .png, image/jpg, image/gif, image/png".-->
+        <!--A depender da configuração de "accept", ao se selecionar os arquivos, só serão exibidos aqueles que podem ser adicionados.-->
+
+        <label for="">Selecione O (s) Link (s):</label>
+        <input type="url" name="form_url" class="espaço" placeholder="https://cfbcursos.com.br" pattern="https://.*">
+
+        <!--O "input URL" é personalizado para receber URLs.-->
+        <!--Ao se tentar enviar um texto que não seja uma URL, ocorrerá um erro. Esse campo somente permite URLs.-->
+        <!--Caso se deseje enviar uma URL "https", será preciso usar o parâmetro "placeholder" mais o parâmetro "pattern".-->
+        <!--Exemplo: "placeholder='https://cfbcursos.com.br' | pattern='https://.*'."-->
+        <!--O "placeholder" é responsável por mostrar uma mensagem na caixa do "input" (seja ele qual for) antes do preenchimento.-->
+
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+
+</body>
+
+</html>
