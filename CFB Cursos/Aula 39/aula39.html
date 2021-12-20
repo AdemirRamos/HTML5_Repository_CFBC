@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 39 - Formulário (Parte 9 - "selection" e "option")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get">
+
+        <select name="form_selection_colour" id="form_select" class="espaço" multiple size="2">
+
+            <option value="Preto">Preto</option>
+            <option value="Branco">Branco</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+
+        </select>
+
+        <br>
+
+        <select name="form_selection_sex" id="form_select_sex" class="espaço">
+
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="TM">Transgênero Masculino</option>
+            <option value="TF">Trangênero Feminino</option>
+            <option value="NB">Não Binário</option>
+            <option value="OT">Outro</option>
+
+        </select>
+
+        <br>
+
+        <select name="form_selection_goods" id="form_select_goods">
+
+            <option value="IMP_YUT65">Impressora YUT65</option>
+            <option value="TV_98_LED">TV LED 98 Polegadas</option>
+
+        </select>
+
+        <br><br>
+
+        <!--O elemento "select" permite o usuário selecionar algo entre uma lista de opções.-->
+        <!--Para disponibilizar as opções, se usa a "tag option".-->
+        <!--O parâmetro "size" (para "select") indica quantas "options" serão visíveis.-->
+        <!--Caso se deseje salvar memória no banco de dados, se pode usar abreviações para as opções.-->
+        <!--Para se fazer isso, usamos o parâmetro "value".-->
+
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+
+</body>
+
+</html>
