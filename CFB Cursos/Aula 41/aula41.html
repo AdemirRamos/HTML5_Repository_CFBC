@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 41 - Formulário (Parte 11 - "fieldset")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        legend {
+            font-weight: bolder;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get">
+
+        <fieldset disabled>
+
+            <legend>Dados Pessoais</legend> <!--Legenda para o "fieldset".-->
+
+            <label for="form_name">Nome:</label>
+            <input type="text" name="form_name" id="nome" class="espaço">
+
+            <label for="form_phone">Telefone:</label>
+            <input type="tel" name="form_phone" id="telefone" class="espaço">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Informações Extras</legend>
+
+            <label for="form_car">Possui carro?</label>
+            <input type="radio" name="form_car" id="carro_sim" value="Sim" style="display: inline-block;">Sim
+            <input type="radio" name="form_car" id="carro_não" value="Não" style="display: inline-block;">Não
+
+            <label for="form_house" class="espaço"><br><br>Possui casa própria?</label>
+            <input type="radio" name="form_house" id="casa_sim" value="Sim" style="display: inline-block;">Sim
+            <input type="radio" name="form_house" id="casa_não" value="Não" style="display: inline-block;">Não
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Envio de Dados</legend>
+
+            <input type="submit" value="Enviar Dados" style="margin-top: 15px;">
+
+        </fieldset>
+
+        <!--"fieldset" representa um conjunto de controle de formulário.-->
+        <!--Essa "tag" nos permite agrupar determinado conjuntos em um grupo.-->
+        <!--"fieldset": display: block; categoria: fluxo e seção; contido por: fluxo; filhos: legend.-->
+        <!--O parâmetro ("boolean") "disabled" desabilita o "fieldset" onde ele se encontra.-->
+        <!--Essa ferramente pode ser útil a, medida que certos campos são preenchidos, outros são desabilitados.-->
+        <!--Esse controle de campos pode ser feito com o JS.-->
+
+    </form>
+
+</body>
+
+</html>
