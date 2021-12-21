@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 40 - Formulário (Parte 10 - "list" e "datalist")</title>
+
+    <style>
+
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="#" name="form" method="get">
+
+        <input list="lista_transportes" name="form_list" class="espaço">
+        
+        <datalist id="lista_cores">
+            
+        <!--"datalist" representa os elementos da lista indicada.-->
+        <!--Para conectar o "input list" e a "datalist", é preciso de dar um "id" para a "datalist";-->
+        <!--No campo "list=''", do "input list", é preciso se usar o "id" da "datalist".-->
+        <!--Dessa forma, tornamos o nosso "input list" genérico, de modo que, apenas mudando a "list=''", podemos mudar os items dele.-->
+        <!--A medida que digitamos dentro da caixa da lista, as opções lá disponíveis são filtradas automaticamente.-->
+        <!--O "value" das "option" será enviado para o formulário.-->
+
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+        <option value="white">Branco</option>
+        <option value="black">Preto</option>
+
+        </datalist>
+
+        <datalist id="lista_transportes">
+
+            <option value="Car">Carro</option>
+            <option value="Airplane">Avião</option>
+            <option value="Ship">Navio</option>
+            <option value="Bike">Motocicleta</option>
+
+        </datalist>
+
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+
+</body>
+
+</html>
