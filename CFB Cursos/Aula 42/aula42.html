@@ -8,12 +8,56 @@
 
     <style>
 
-        
+        form {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .espaço {
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        legend {
+            font-weight: bolder;
+        }
 
     </style>
 
 </head>
+
 <body>
     
+    <form action="#" name="form" method="get">
+
+        <!--"textarea" serve para representar uma área de texto específica para formulários.-->
+        <!--"textarea": display: inline; categoria: fluxo, fraseado e interativo; contido por: fraseado; filhos: texto.-->
+
+        <textarea name="form_text" id="texto_formulário" cols="50" rows="10" maxlength="1000" autofocus>
+
+            <!--"cols" representa o número de colunas da área de texto (não o número máximo de colunas).-->
+            <!--"rows" representa o número de linhas da área de texto (não o número máximo de linhas).-->
+            <!--"maxlength" representa o número máximo de caracteres que podem ser alocados na área de texto.-->
+            <!--"autofocus" ("boolean") faz com que o foco inicial da página esteja na área de texto.-->
+            <!--Qualquer texto dentro de "textarea" será formatado dentro de área de texto ao renderizar a página.-->
+            <!--Não é possível, dentro da área de texto, usar "p" e outras "tags" do gênero.-->
+
+        </textarea>
+
+        <input type="submit" value="Enviar Dados" style="margin-top: 10px;">
+
+    </form>
+
 </body>
+
 </html>
