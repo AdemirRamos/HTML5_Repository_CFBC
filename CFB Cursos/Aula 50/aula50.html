@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 50 - "Tag iframe"</title>
+
+    <style>
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            border: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--A "tag iframe" insere uma janela dentro de outra janela.-->
+    <!--É possível se ter mais de um "iframe" no documento.-->
+    <!--Também é possível se adicionar qualquer conteúdo a uma "iframe".-->
+    <!--O YouTube conta com um recurso que não o permite ser carregado em "iframe's".-->
+    <!--O mesmo vale para o "site" da Google.-->
+    <!--Vários recursos são desabilidatos/não funcionam para/com o "iframe";-->
+    <!--Um desses recursos é justamente o envio de dados por formulários.-->
+    <!--P. S.: Quando os dados de um formulário são enviados, as informações nos campos preenchidos são apagadas.-->
+    <!--Através do atributo "sandbox", entre outras coisas, podemos habilitar o envio de informações via formulários.-->
+
+    <iframe src="../Aula 33/aula33.html" frameborder="0" sandbox="allow-forms allow-scripts"></iframe>
+    <iframe src="http://w3.org" frameborder="0"></iframe>
+    <iframe src="http://www.cfbcursos.com.br" frameborder="0"></iframe>
+
+</body>
+
+</html>
