@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 55 - "Tag iframe" (Parte 2)</title>
+
+    <style>
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            border: none;
+            display: block;
+        }
+
+        a {
+            display: inline-block;
+            font-weight: bolder;
+            font-size: 16.5px;
+            margin-bottom: 15px;
+        }
+
+        .borda {
+            border-right: 3px solid black;
+            padding-right: 10px;
+        }
+
+        #banner {
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+            display: block;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener('load', iniciar)
+
+        function iniciar() {
+            banner_switch()
+        }
+
+        function banner_switch() {
+            var num = Math.round(Math.random() * 3)
+            var imagens = ['Imagens/p1.png', 'Imagens/p2.png', 'Imagens/p3.png']
+            document.getElementById('banner').src = imagens[num]
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <!--Abaixo vemos como usar um "iframe" para abrir um "link" da página - através da propriedade "name" (em "iframe").-->
+    <!--Se pode adicionar, ao "iframe", tantos "links" quanto se desejar.-->
+
+    <a href="../Aula 33/aula33.html" target="main" class="borda">Aula 33</a>
+    <a href="../Aula 34/aula34.html" target="main" class="borda">Aula 34</a>
+    <a href="../Aula 35/aula35.html" target="main">Aula 35</a>
+
+    <iframe src="http://www.cfbcursos.com.br" name="main" frameborder="0"></iframe>
+
+    <iframe src="" name="banner" id="banner" frameborder="0"></iframe>
+
+</body>
+
+</html>
