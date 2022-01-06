@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 57 - "Tag meter"</title>
+
+    <style>
+
+        a {
+            display: block;
+            margin-top: 5px;
+            color: coral;
+            font-size: 16.9px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        meter {
+            width: 500px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--"meter": display: inline; categoria: fluxo e fraseado; contido por: fraseado; filhos: fraseado.-->
+    <!--Caso o "meter" não seja carregado pelo navegador do usuário, o texto (dentro de "meter") será exibido ao usuário.-->
+
+    <!--"value": ;-->
+    <!--"max": indica o valor máximo para a barra de carregamento;-->
+    <!--"min": indica o valor mínimo para a barra de carregamento;-->
+    <!--"high": esse é um valor de alerta (máximo) - algo será indicado ao usuário ao se atingir essa valor;-->
+    <!--"low": esse é um valor de alerta (mínimo) - algo será indicado ao usuário ao se atingir essa valor;-->
+    <!--"optimum": esse é o valor ideal.-->
+
+    <h1>CFB Cursos</h1>
+    <a href="www.youtube.com/cfbcursos">Canal no YouTube.</a>
+    <a href="www.cfbcursos.com/br">Site do canal.</a>
+    <a href="www.github.com/cfbcursos" style="margin-bottom: 5px;">Perfil no GitHub.</a>
+
+    <meter value="5" max="10" min="0" high="8" low="2" optimum="5" id="medidor">De 0 a 10.</meter>
+
+    <script>
+
+        var valor = document.getElementById('medidor').value = '6'
+
+    </script>
+
+</body>
+
+</html>
