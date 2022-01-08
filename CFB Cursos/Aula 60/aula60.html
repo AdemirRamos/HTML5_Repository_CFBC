@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 60 - "Tag object"</title>
+
+</head>
+
+<body>
+    
+    <!--"Tag object":-->
+    <!--display: inline; categoria: fluxo, fraseado, incorporado; contido por: onde incorporado é esperado; filhos: <param>-->
+
+    <!--A "tag object" nos permite incorporar ou vincular um arquivo externo ao HTML.-->
+
+    <!--Para áudios, a melhor opção é a "tag audio"; para vídeos, a melhor opção é a "tag video"; para imagens, a "tag img".-->
+    <!--Entretanto, "object" também pode ser usado com todos os formatos acima.-->
+
+    <!--É importante dar um nome para o "object".-->
+
+    <!--Em "data=''", vai o nome do arquivo.-->
+
+    <object data="Mídia/trigun.mp3" type="" name="trigun.mp3" width="" height=""></object>
+
+    <!--Outra maneira de se trabalhar com "object":-->
+
+    <!--Dessa maneira não é preciso usar "data" no "object".-->
+
+    <object type="" name="trigun.mp3" width="" height="">
+
+        <param name="src" value="Mídia/trigun.mp3">
+
+    </object>
+
+</body>
+
+</html>
