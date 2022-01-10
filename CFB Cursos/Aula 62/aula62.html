@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 62 - "Tag optgroup" - Agrupar Elementos No "Select"</title>
+
+</head>
+
+<body>
+    
+    <!--A "tag optgroup" organiza os elementos de uma "select" em um grupo.-->
+    <!--"optgroup" deve ser contida por uma "select" e o seu filho direto deve ser um elemento "option".-->
+
+    <select name="" id="">
+
+        <optgroup label="Web">
+
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="PHP / MySQL">PHP / MySQL</option>
+
+            <!--O parâmetro "label" será o responsável por etiquetar esse grupo de opções.-->
+
+        </optgroup>
+
+        <optgroup label="Desktop">
+
+            <option value="C++">C++</option>
+            <option value="Qt Creator">Qt Creator</option>
+
+        </optgroup>
+
+        <optgroup label="Maker">
+
+            <option value="Arduino">Arduino</option>
+
+        </optgroup>
+
+        <optgroup label="Celular">
+
+            <option value="AppInventor">AppInventor</option>
+
+        </optgroup>
+
+        <optgroup label="Games">
+
+            <option value="Unity">Unity</option>
+
+        </optgroup>
+
+        <optgroup label="Design / Gráfico">
+
+            <option value="Photoshop">Photoshop</option>
+            <option value="Flash">Flash</option>
+
+        </optgroup>
+        
+        <!--Todo elemento "option" deve ter um "value" pois esse será o valor passado para o banco de dados após o envio de dados.-->
+        <!--"optgroup" irá funcionar agrupando "option's".-->
+
+    </select>
+
+
+</body>
+
+</html>
