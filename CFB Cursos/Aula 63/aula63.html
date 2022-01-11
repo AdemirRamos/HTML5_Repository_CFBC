@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 63 - "Tag output"</title>
+
+    <style>
+
+        p, input {
+            display: inline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--A "tag output" é usada como uma saída cuja a qual pode receber um cálculo ou resultado de cálculo de outros componentes.-->
+    <!--Normalmente, "output" é usado em formulários.-->
+
+    <form action="" oninput="resultado.value = parseInt(A.value) + (B.value)">
+
+        0<input type="range" id="A" value="50">100 <!--Checar.-->
+        
+        <!--O "input range" cria uma barra com um medidor.-->
+
+        <p>+</p>
+
+        <input type="number" id="B" value="0">
+
+        <p>=</p>
+
+        <output name="resultado" for="A B"></output>
+
+        <!--"for" indica com quais elementos, o elemento que o recebe, está ligado.-->
+
+    </form>
+
+</body>
+
+</html>
