@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 64 - "Tag progress"</title>
+
+    <style>
+
+        input, progress {
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--A "tag progress" serve para representar uma barra de carregamento / processo.-->
+    <!--No parâmetro "max", definimos o valor máximo da barra de carregamento.-->
+    <!--E em "value" definimos o valor atual.-->
+    <!--Caso a barra de carregamento não seja exibida, o texto de "progress" será exibido em seu lugar.-->
+
+    <input type="range" min="0" max="100" value="0" name="" onchange="barra.value=this.value"> <!--Checar "onchange" / "this".-->
+    <progress value="0" max="100" id="barra"></progress>
+
+</body>
+
+</html>
