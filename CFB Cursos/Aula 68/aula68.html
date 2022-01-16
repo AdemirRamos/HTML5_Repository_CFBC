@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 68 - "Tag section"</title>
+
+    <style>
+
+        .cinza {
+            background-color: #aaa;
+        }
+
+        .branca {
+            background-color: #ddd;
+        }
+
+        section {
+            padding: 15px;
+        }
+
+        article {
+            display: flex;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--A "tag section" representa um agrupamento (genérico) de conteúdo.-->
+    <!--"Tag section": display: block; categoria: fluxo e seção; contido por: fluxo; filhos: fluxo.-->
+    <!--"section" pode ir dentro ou fora de "article".-->
+    <!--É importante identificar o conteúdo de uma "section" com uma "tag h".-->
+
+    <article>
+
+        <section class="branca">
+
+            <h1>Cursos</h1>
+
+            <dl>
+
+                <dt>HTML:</dt>
+                <dd>Principal tecnologia para criação de páginas "web".</dd>
+
+                <dt>CSS:</dt>
+                <dd>Principal tecnologia para formatação de páginas "web".</dd>
+
+                <dt>C++:</dt>
+                <dd>Linguagem "desktop" de médio nível. Muito poderosa e versátil.</dd>
+
+                <dt>AppInventor:</dt>
+                <dd>Ferramento on-line para a criação de aplicativos de celular.</dd>
+
+            </dl>
+
+            <p>Temos muitos outros cursos no canal: C#, Unity, 3D, Arduino, Photoshop, Flash, et cetera. Não deixe de conferir!</p>
+
+        </section>
+
+        <section class="cinza">
+
+            <h1>Apostilas</h1>
+
+            <p>No site do canal você encontra as apostlas para "<a href="http://www.cfbcursos.com.br" target="_blank">download</a>".</p>
+
+            <ol>
+
+                <li>HTML5;</li>
+                <li>CSS3;</li>
+                <li>Javascript;</li>
+                <li>Wordpress;</li>
+                <li>Android Studio;</li>
+                <li>JQuery;</li>
+                <li>Java.</li>
+
+            </ol>
+        
+        </section>
+
+        <section class="branca">
+
+            <h1>Links para o CFB Cursos:</h1>
+
+            <a href="http://www.youtube.com/cfbcursos" target="_blank">Canal no YouTube;</a>
+            <a href="http://www.cfbcursos.com.br" target="_blank">Site do canal;</a>
+            <a href="http://www.github.com/cfbcursos" target="_blank">Perfil no GitHub.</a>
+
+        </section>
+
+        <section class="cinza">
+
+            <h1>Contato:</h1>
+            <p>canalfessorbruno@gmail.com</p>
+        
+        </section>
+
+    </article>
+
+    <article>
+
+        <p>Novo "article" sobre outro ou sobre um subtema.</p>
+
+    </article>
+
+</body>
+
+</html>
