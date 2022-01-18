@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 70 - "Tag source"</title>
+
+</head>
+
+<body>
+    
+    <!--Essa "tag" serve para especificar vários tipos de mídias, como áudios, vídeos, fotos, et cetera.-->
+
+    <video src="" controls width="250">
+
+        <source src="Mídia/V06-09-13_09-22.3gp" type="video/mp4"></source>
+
+    </video>
+
+    <!--É possível especificar diferentes fontes para um mesmo arquivo:-->
+
+    <picture>
+
+        <!--Especificando imagens de acordo com o tamanho da tela:-->
+
+        <!--"srcset" serve para definir qual imagem será mostrada a partir do momento em que a condição da primeira não for satisfeita.-->
+
+        <source media="(min-width=1000px)" srcset="Songs For The Deaf (All Red - P).png"></source>
+
+        <img src="Mídia/Songs For The Deaf (All Red - P).png" alt="Capa do álbum 'Songs For The Deaf'. A capa consiste em um fundo vermelho com uma diapasão preto de pontas triangularmente pontudas ao centro da imagem.">
+
+    </picture>
+
+</body>
+
+</html>
