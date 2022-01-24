@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 76 - Tabelas HTML, Mesclando Células ("colspan" e "rowspan")</title>
+    
+    <style>
+
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <table>
+
+        <!--"table" é o container principal (container-pai) de todos os elementos da tabela.-->
+        <!--"table": display: block; categoria: fluxo; contido por: fluxo; filhos: caption, thead, tbody, tfooter, tr, th, colrow, etc.-->
+
+        <tr>
+
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+
+        <tr>
+
+            <td rowspan="5">Seminovos</td>
+
+        </tr>
+
+        <tr>
+
+            <!--"tr": "table row": linha da tabela.-->
+            <!--"td": "table division": divisões de tabélas / células.-->
+
+            <td>Fabricante</td>
+            <td>Modelo</td>
+            <td>Valor</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Honda</td>
+            <td>WRV</td>
+            <td>R$70.000,00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Wolksvagen</td>
+            <td>Golf GTI</td>
+            <td>R$80.000,00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Ford</td>
+            <td>Ranger</td>
+            <td>R$90.000,00</td>
+
+        </tr>
+
+        <tr>
+
+            <td colspan="4">Tabela de Preços 2022:</td>
+            
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
