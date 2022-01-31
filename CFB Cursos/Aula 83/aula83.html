@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 83 - "Tag video"</title>
+
+</head>
+
+<body>
+    
+    <!--A "tag video" permite a inserção de vídeos à página.-->
+    <!--A adição de vídeos pode ser feita tanto por "src" quanto pela "tag source" (também usando "src").-->
+    <!--"source" é útil em caso de um ou mais vídeos com vários formatos diferentes.-->
+    
+    <!--Atributos de "video" (alguns atributos são "boolean" e outros não):-->
+
+    <!--"controls": mostra os controles do vídeo;-->
+    <!--"autoplay": dá 'play' automaticamente. - "autoplay" pode não funcionar em todos os navegadores;-->
+    <!--P. S.: Caso "autoplay" seja usado junto com "muted", ele funcionará.-->
+    <!--"width" e "height": respectivamente, alteram a largura e altura do vídeo.-->
+
+    <video src="Vídeos/VID-20180801-WA0024.mp4" controls autoplay muted>
+
+        <!--Em caso do navegador não suportar o vídeo, podemos adicionar uma mensagem para ser exibida para o usuário:-->
+        <!--P. S.: A mensagem somente será exibida caso o navegador não possa exibir o vídeo.-->
+
+        O seu navegador não possui suporte ao vídeo.
+
+        <source></source>
+
+    </video>
+
+</body>
+
+</html>
