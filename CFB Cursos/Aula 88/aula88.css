@@ -87,3 +87,27 @@ article {
     width: 100%;
     text-align: center;
 }
+
+/*Animações:*/
+
+[data-animação] {
+    opacity: 0; /*Torna os elementos opacos.*/
+    transition: .5s;
+}
+
+[data-animação="esquerda"] {
+    transform: translate3d(-50px, 0, 0); /*Ordem dos exiso de "translation": X; Y; Z.*/
+}
+
+[data-animação="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animação="centro"] {
+    transform: translate3d(0, 50px, 0); /*Ordem dos exiso de "translation": X; Y; Z.*/
+}
+
+[data-animação] .animação {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}

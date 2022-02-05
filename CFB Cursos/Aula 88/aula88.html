@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 88 - Construindo Uma Página Com Layout (Full Page - Parte 5)</title>
     <link rel="stylesheet" href="aula88.css">
-    <script src="aula88.js"></script>
 
 </head>
 
@@ -40,13 +39,13 @@
 
     <section id="sobre" class="flexível">
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="esquerda">
 
             Sobre o canal.
 
         </article>
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="direita">
 
             Sobre mim.
 
@@ -56,19 +55,19 @@
 
     <section id="cursos" class="flexível">
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="esquerda">
 
             Esquerda.
 
         </article>
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="centro">
 
             Centro.
 
         </article>
 
-        <article class="borda_0" >
+        <article class="borda_0" data-animação="direita">
 
             Direita.
 
@@ -78,13 +77,13 @@
 
     <section id="canal" class="flexível">
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="esquerda">
 
             Imagem "link" canal.
 
         </article>
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="direita">
 
             "Link" direto para o canal.
 
@@ -94,19 +93,19 @@
 
     <section id="contato" class="flexível">
 
-        <article class="borda_0">
+        <article class="borda_0" data-animação="esquerda">
 
             Contato esquerda.  
 
         </article>
         
-        <article class="borda_0">
+        <article class="borda_0" data-animação="centro">
 
             Contato centro.
 
         </article>
         
-        <article class="borda_0">
+        <article class="borda_0" data-animação="direita">
 
             Contato direita.
 
@@ -119,6 +118,10 @@
 
 
     </footer>
+
+    <!--O "script" foi chamado aqui justamente por não ter sido usado "addEventListener('load')".-->
+
+    <script src="aula88.js"></script>
 
 </body>
 
