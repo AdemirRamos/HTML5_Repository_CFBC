@@ -104,10 +104,10 @@ article {
 }
 
 [data-animação="centro"] {
-    transform: translate3d(0, 50px, 0); /*Ordem dos exiso de "translation": X; Y; Z.*/
+    transform: translate3d(0, 50px, 0);
 }
 
-[data-animação] .animação {
+[data-animação].animação {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }

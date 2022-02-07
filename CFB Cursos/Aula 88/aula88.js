@@ -24,7 +24,7 @@ function animação_scroll() {
 //Verificando se os elementos da página, eventualmente, precisarão receber a animação:
 
 if (elementos.length) { //0 == false; 1 == true.
-    window.addEventListener('scoll', function () {
-        animação_scroll
+    window.addEventListener('scoll', function() {
+        animação_scroll()
     })
 }
