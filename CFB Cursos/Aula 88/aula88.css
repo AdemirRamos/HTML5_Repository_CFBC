@@ -96,7 +96,7 @@ article {
 }
 
 [data-animação="esquerda"] {
-    transform: translate3d(-50px, 0, 0); /*Ordem dos exiso de "translation": X; Y; Z.*/
+    transform: translate3d(-50px, 0, 0); /*Ordem dos eixos de "translation": X; Y; Z.*/
 }
 
 [data-animação="direita"] {
