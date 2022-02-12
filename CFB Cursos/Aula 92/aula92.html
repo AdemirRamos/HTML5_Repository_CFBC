@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 92 - Construindo Uma Página Com Layout (Full Page - Parte 9)</title>
+    <link rel="stylesheet" href="aula92.css">
+
+    <!--NÃO FUNCIONAL.-->
+
+</head>
+
+<body>
+    
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <!--Essa "ul" funciona como uma espécie de "scrollIntoView()".-->
+
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#canal">Canal</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section id="banner" class="banner">
+
+        <img src="Mídia/cfb.png" alt="A imagem se trata de um fundo transparente com a palavra 'CFB Cursos' escrita em letras garrafais.">
+
+    </section>
+
+    <section id="sobre" class="flexível">
+
+        <article class="borda_0" data-animação="esquerda">
+
+            Sobre o canal.
+
+        </article>
+
+        <article class="borda_0" data-animação="direita">
+
+            Sobre mim.
+
+        </article>
+
+    </section>
+
+    <section id="cursos" class="flexível">
+
+        <article class="borda_0" data-animação="esquerda" class="container_cursos">
+
+            <!--O "this" indica que o próprio elemento clicado será passado como parâmetro da função.-->
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+        </article>
+
+        <article class="borda_0" data-animação="centro" class="container_cursos">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+        </article>
+
+        <article class="borda_0" data-animação="direita" class="container_cursos">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+            <img src="Mídia/s.png" class="mini" onclick="clique_modal(this)" alt="Capa do álbum 'Songs For The Deaf'. A imagem consiste em um fundo vermelho com um diapasão preto, ao fundo, com pontas triangularmente pontudas.">
+
+        </article>
+
+    </section>
+
+    <section>
+
+        <article class="parallax" class="p1">
+
+            CFB Cursos<br>CFB Cursos<br>CFB Cursos<br>CFB Cursos<br>CFB Cursos<br>
+
+        </article>
+
+        <article class="parallax" class="p2">
+
+            CFB Cursos<br>CFB Cursos<br>CFB Cursos<br>CFB Cursos<br>CFB Cursos<br>
+
+        </article>
+
+    </section>
+
+    <section id="canal" class="flexível">
+
+        <article class="borda_0" data-animação="esquerda">
+
+            Imagem "link" canal.
+
+        </article>
+
+        <article class="borda_0" data-animação="direita">
+
+            "Link" direto para o canal.
+
+        </article>
+
+    </section>
+
+    <section id="contato" class="flexível">
+
+        <article class="borda_0" data-animação="esquerda">
+
+            Contato esquerda.  
+
+        </article>
+        
+        <article class="borda_0" data-animação="centro">
+
+            Contato centro.
+
+        </article>
+        
+        <article class="borda_0" data-animação="direita">
+
+            Contato direita.
+
+        </article>
+
+    </section>
+
+    <footer>
+
+
+
+    </footer>
+
+    <div id="janela_modal" class="janela_modal">
+
+        <span id="botão_fechar" class="fechar_modal">x</span>
+        <img src="" id="imagem_modal" class="imagem_modal" alt="">
+        <div id="texto_modal" class="texto_modal"></div>
+
+    </div>
+
+    <!--O "script" foi chamado aqui justamente por não ter sido usado "addEventListener('load')".-->
+
+    <script src="aula92.js"></script>
+
+</body>
+
+</html>
