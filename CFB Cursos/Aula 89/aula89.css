@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth; /*Controla o comportamento da rolagem.*/
+}
+
+header {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header > nav > ul > li {
+    display: inline;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 2px 10px;
+    display: inline-block;
+    z-index: 9999;
+}
+
+header > nav > ul > li > a:hover {
+    color: #b6dbf1;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+}
+
+/*Aplicando as seguintes configurações às sessões ímpares:*/
+
+section:nth-child(odd) {
+    background-color: #3c4f60;
+}
+
+section, footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner > img { /*O sinal de "maior que" (>) pode ser omitido.*/
+    width: 100%;
+}
+
+.borda_0 {
+    border: none;
+}
+
+.borda_1 {
+    border: 1px solid black;
+}
+
+.borda_2 {
+    border: 1px solid red;
+}
+
+.flexível {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+}
+
+/*Animações:*/
+
+[data-animação] {
+    opacity: 0; /*Torna os elementos opacos.*/
+    transition: .5s;
+}
+
+[data-animação="esquerda"] {
+    transform: translate3d(-50px, 0, 0); /*Ordem dos eixos de "translation": X; Y; Z.*/
+}
+
+[data-animação="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animação="centro"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-animação].animação {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/*Parallax:*/
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover; /*Cobre todo o seu container.*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale(1.01);
+}
+
+.p1 {
+    background-image: url('Mídia/parallax1.png');
+}
+
+.p2 {
+    background-image: url('Mídia/parallax2.png');
+}
