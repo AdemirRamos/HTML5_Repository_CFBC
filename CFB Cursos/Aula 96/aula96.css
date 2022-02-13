@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.my_title {
+    font-size: 17px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabs > button {
+    background-color: inherit; /*Herda a cor de fundo do elemento pai.*/
+    float: left; /*Checar.*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+.tabs > button:hover {
+    background-color: #ddd;
+}
+
+.tabs > button.active { /*Checar.*/
+    background-color: #ccc;
+}
+
+.conteúdo_tabs {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.fechar_tabs {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fechar_tabs:hover {
+    color: red;
+}
