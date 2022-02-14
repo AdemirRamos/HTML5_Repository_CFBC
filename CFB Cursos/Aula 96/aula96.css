@@ -29,7 +29,7 @@ body {
     background-color: #ddd;
 }
 
-.tabs > button.active { /*Checar.*/
+.tabs > button.active {
     background-color: #ccc;
 }
 
@@ -40,12 +40,12 @@ body {
     border-top: none;
 }
 
-.fechar_tabs {
+.fechar_tab {
     float: right;
     cursor: pointer;
     font-size: 20px;
 }
 
-.fechar_tabs:hover {
+.fechar_tab:hover {
     color: red;
 }
