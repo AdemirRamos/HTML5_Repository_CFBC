@@ -13,15 +13,15 @@
     
     <nav class="tabs">
 
-        <button onclick="" id="">C#</button>
-        <button onclick="" id="">HTML</button>
-        <button onclick="" id="">Arduino</button>
+        <button data-botão_tab onclick="abrir_tab(event, 'c#')" id="primeira_tab">C#</button> <!--Checar "event".-->
+        <button data-botão_tab onclick="abrir_tab(event, 'html_completo')" id="">HTML</button>
+        <button data-botão_tab onclick="abrir_tab(event, 'babuino')" id="">Arduino</button>
 
     </nav>
 
     <article id="c#" class="conteúdo_tabs">
 
-        <span class="fechar_tab">x</span>
+        <span class="fechar_tab" onclick="this.parentElement.style.display = 'none'">x</span>
         <h1 class="my_title">C#</h1>
         <p>Curso de programação (completo) em C#.</p>
 
@@ -29,7 +29,7 @@
 
     <article id="html_completo" class="conteúdo_tabs">
 
-        <span class="fechar_tab">x</span>
+        <span class="fechar_tab" onclick="this.parentElement.style.display = 'none'">x</span>
         <h1 class="my_title">HTML</h1>
         <p>Curso completo e profissional de HTML.</p>
 
@@ -37,7 +37,7 @@
 
     <article id="babuino" class="conteúdo_tabs">
 
-        <span class="fechar_tab">x</span>
+        <span class="fechar_tab" onclick="this.parentElement.style.display = 'none'">x</span>
         <h1 class="my_title">Arduino</h1>
         <p>Curso prático de prototipagem Arduino.</p>
 
