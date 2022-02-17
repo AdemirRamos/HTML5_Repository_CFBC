@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu_container {
+    width: 300px;
+    padding: 15px 0px;
+    background-color: #bbb;
+}
+
+.menu_container > ul > li > a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu_container > h1 {
+    padding-left: 10px;
+}
+
+#pesquisa {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+#menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu > li > a:hover {
+    background-color: #eee;
+}
