@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 99 - Menu Lateral Oculto Interativo</title>
+    <link rel="stylesheet" href="aula99.css">
+
+</head>
+
+<body>
+    
+    <aside id="menu_oculto" class=" menu_oculto">
+
+        <!--O "void(0)" faz com que o "a" não tenha mais um comportamento de "link", o que habilitará a transição de fechamento.-->
+        <!--O comportamento, em questão, consiste em chamar o elemento relacionado ao "link" assim que ele ("link") for clicado.-->
+
+        <a href="javascript:void(0)" class="botão_fechar" onclick="fechar_nav()">&times;</a> <!--"X" para fechar a janela.-->
+        <a href="#">Sobre</a>
+        <a href="#">Cursos</a>
+        <a href="#">Endereços</a>
+        <a href="#">Contato</a>
+
+    </aside>
+
+    <section id="principal">
+
+        <span style="font-size: 30px; cursor: pointer;" onclick="abrir_nav()">&#9776;</span> <!--Três barrinhas.-->
+        <p>CFB Cursos</p>
+
+    </section>
+
+</body>
+
+    <script src="aula99.js"></script>
+
+</html>
