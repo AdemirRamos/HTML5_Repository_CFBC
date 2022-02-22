@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.imagem_slide {
+    vertical-align: middle;
+}
+
+.botão_anterior, .botão_próximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.4s ease;
+    user-select: none; /*Checar.*/
+}
+
+.botão_anterior {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.botão_próximo {
+    right: 0px;
+    border-radius: 5px 0 0 5px;
+}
+
+.botão_anterior:hover, .botão_próximo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
