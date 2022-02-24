@@ -7,6 +7,8 @@
     <title>Aula 107 - Slideshow (Parte 3)</title>
     <link rel="stylesheet" href="aula107.css">
 
+    <!--Ainda não funcional.-->
+
 </head>
 
 <body>
@@ -53,17 +55,17 @@
 
         </div>
 
-        <a class="botão_anterior" onclick="" href="">&lsaquo;</a>
-        <a class="botão_próximo" onclick="" href="">&rsaquo;</a>
+        <a class="botão_anterior" onclick="mudar_slide(-1)" href="">&lsaquo;</a>
+        <a class="botão_próximo" onclick="mudar_slide(1)" href="">&rsaquo;</a>
 
     </section>
 
     <section style="text-align: center;">
 
-        <span class="indicador" onclick=""></span>
-        <span class="indicador" onclick=""></span>
-        <span class="indicador" onclick=""></span>
-        <span class="indicador" onclick=""></span>
+        <span class="indicador" onclick="slide_atual(1)"></span>
+        <span class="indicador" onclick="slide_atual(2)"></span>
+        <span class="indicador" onclick="slide_atual(3)"></span>
+        <span class="indicador" onclick="slide_atual(4)"></span>
 
     </section>
 

@@ -16,7 +16,7 @@ body {
 }
 
 .slide {
-    display: block;
+    display: none;
 }
 
 .imagem_slide {
