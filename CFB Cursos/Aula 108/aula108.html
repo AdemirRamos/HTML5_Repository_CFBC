@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 108 - Galeria de Imagens</title>
+    <link rel="stylesheet" href="aula108.css">
+
+</head>
+
+<body>
+    
+    <section class="galeria">
+
+        <img src="Mídia/gow1.jpg" alt="Imagem do jogo 'Mito of War (2018)'." onclick="mostrar_imagem(this)">
+        <img src="Mídia/gow2.jpg" alt="Imagem do jogo 'Mito of War (2018)'." onclick="mostrar_imagem(this)">
+        <img src="Mídia/gow3.jpg" alt="Arte conceitual do jogo God of War (2018)." onclick="mostrar_imagem(this)">
+        <img src="Mídia/gow4.jpg" alt="Arte conceitual do jogo God of War (2018)." onclick="mostrar_imagem(this)">
+        <img src="Mídia/gow5.jpg" alt="Arte conceitual do jogo God of War (2018)." onclick="mostrar_imagem(this)">
+
+    </section>
+
+    <section class="container">
+
+        <span onclick="this.parentElement.style.display = 'none'" class="botão_fechar">&times;</span>
+        <img id="imagem_grande">
+
+    </section>
+
+    <section>
+
+        <p>Galeria de Imagens.</p>
+
+    </section>
+
+</body>
+
+    <script src="aula108.js"></script>
+
+</html>

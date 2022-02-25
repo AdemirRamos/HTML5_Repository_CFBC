@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.galeria {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.galeria > img {
+    /*Sem o sinal de menor: apontando para todos os elementos (filhos ou não) de um elemento que use a classe ".galeria".*/
+    /*Com o sinal de menor: apontando para todos os elementos-filhos de um elemento que use a classe ".galeria".*/
+    
+    opacity: 0.7;
+    cursor: pointer;
+    width: 150px;
+    margin: 5px;
+    margin-right: 0px;
+}
+
+.galeria > img:hover {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    display: none;
+    width: 60%;
+    margin: auto;
+}
+
+.container > img {
+    width: 100%; /*Largura de 100% dentro do elemento da classe ".container" que, por sua vez, tem uma largura de 60%.*/
+    
+}
+
+.botão_fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.botão_fechar:hover {
+    color: red;
+    transition: 0.5s;
+}
