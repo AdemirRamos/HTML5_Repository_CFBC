@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.container {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    color: white;
+}
+
+.container > img {
+    width: 100%;
+}
+
+.baixo_esquerda {
+    position: absolute; /*Posiciona a imagem em relação ao primeiro elemento com "posiition: relative".*/
+    bottom: 7px;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.topo_esquerda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.topo_direita {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.baixo_direita {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.centro {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transition: translate(-50px, -50px);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.container > div:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
