@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+img {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filtro_01 {
+    filter: grayscale(100%);
+
+    /*Caso o seu "browser" não suporte os filtros:*/
+
+    -webkit-filter: grayscale(100%);
+}
+
+.filtro_02 {
+    filter: blur(1px);
+}
+
+.filtro_03 {
+    filter: brightness(300%);
+}
+
+.filtro_04 {
+    filter: contrast(300%);
+}
+
+.filtro_05 {
+    filter: drop-shadow(10px 10px 10px red);
+    /*Valores: posição X; posição Y; enevoamento; cor.*/
+}
+
+.filtro_06 {
+    filter: hue-rotate(180deg);
+}
+
+.filtro_07 {
+    filter: invert(100%);
+}
+
+.filtro_08 {
+    filter: opacity(30%);
+}
+
+.filtro_09 {
+    filter: saturate(300%);
+}
+
+.filtro_10 {
+    filter: sepia(100%);
+}
+
+.filtro_11 {
+    filter: contrast(200%) brightness(150%) grayscale(50%) blur(1px);
+}
