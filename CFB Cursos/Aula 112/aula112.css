@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-image: url('Mídia/lofi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
