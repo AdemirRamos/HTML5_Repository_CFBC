@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 116 - Galeria de Imagens Filtrável</title>
+    <link rel="stylesheet" href="aula116.css">
+
+</head>
+
+<body>
+    
+    <section class="galeria">
+
+        <header class="cabeçalho_galeria">
+
+            <button class="botão_ativo" onclick="gerenciar_imagens('tudo')">Tudo</button>
+            <button class="botão" onclick="gerenciar_imagens('c1')">Camada 1</button>
+            <button class="botão" onclick="gerenciar_imagens('c2')">Camada 2</button>
+            <button class="botão" onclick="gerenciar_imagens('c3')">Camada 3</button>
+
+        </header>
+
+        <article class="imagens">
+
+            <img src="Mídia/gow1.jpg" class="imagem c1" alt="">
+            <img src="Mídia/gow2.jpg" class="imagem c1" alt="">
+            <img src="Mídia/gow3.jpg" class="imagem c2" alt="">
+            <img src="Mídia/gow4.jpg" class="imagem c2" alt="">
+            <img src="Mídia/gow5.jpg" class="imagem c3" alt="">
+            <img src="Mídia/lofi.jpg" class="imagem c3" alt="">
+
+        </article>
+
+    </section>
+
+</body>
+
+    <script src="aula116.js"></script>
+
+</html>
