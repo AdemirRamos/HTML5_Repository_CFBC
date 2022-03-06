@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth; /*Este recurso não funciona no Opera. - 06/03/2022.*/
+}
+
+#section_1 {
+    height: 600px;
+    background-color: red;
+    color: white;
+}
+
+#section_2 {
+    height: 600px;
+    background-color: green;
+    color: white;
+}
