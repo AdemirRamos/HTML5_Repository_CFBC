@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 121 - Background Animado</title>
+    <link rel="stylesheet" href="aula121.css">
+
+    <style>
+
+        #texto > p {
+            line-height: 900px;
+            font-weight: bolder;
+            font-size: 18px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            padding-left: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <video autoplay muted loop id="meu_vídeo">
+
+        <source src="Mídia/yellow-leaves.mp4" type="video/mp4">
+        
+        O seu navegador não tem suporte a vídeos.
+
+    </video>
+
+    <div class="conteúdo">
+
+        <h1>CFB Cursos</h1>
+        
+        <p>CFB Cursos é um canal de vídeo aulas gratuitas de informática. Temos disponíveis uma quantidade grande de cursos e aulas. Se inscreva, e venha crescer conosco.</p>
+
+        <button id="botão_pausa" onclick="pausar_vídeo()">Pausar</button>
+
+    </div>
+
+    <div id="texto">
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <p>E aí,</p>
+        <p>Curtiu</p>
+        <p>O Resultado</p>
+        <p>Da Página?</p>
+
+    </div>
+
+</body>
+
+    <script src="aula121.js"></script>
+
+</html>
