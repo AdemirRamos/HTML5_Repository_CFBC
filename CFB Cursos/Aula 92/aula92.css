@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /*Explicação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing*/
+    
     overflow-x: hidden;
 }
 
@@ -170,6 +172,8 @@ article {
 
 .fechar_modal {
     position: absolute;
+    /*Explicação: https://www.w3schools.com/css/css_positioning.asp#:~:text=An%20element%20with%20position%3A%20absolute,moves%20along%20with%20page%20scrolling.*/
+
     top: 15px;
     right: 35px;
     color: white;
