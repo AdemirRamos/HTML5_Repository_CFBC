@@ -19,6 +19,7 @@ function animação_scroll() {
             
             //Explicação "offsetTop": https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLElement/offsetTop
             //Explicação "classList": https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList
+            //Explicação "forEach": https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
         }
 
         else {
