@@ -1,4 +1,4 @@
-//As versões mais recentes do JS recomendam que, caso uma variável seja destinada a guarda elementos, ela deve ser "const".
+//As versões mais recentes do JS recomendam que, caso uma variável seja destinada a guardar elementos, ela deve ser declarada como "const".
 
 //Seja em JS ou CSS, os colchetes servem para selecionar parâmetros.
 
@@ -10,9 +10,15 @@ function animação_scroll() {
     const topo_página_janela = window.pageYOffset + ((window.innerHeight * 3) / 4) //Três quartos da janela como referência.
     //Definindo de onde a animação vai partir. Quanto mais se somar a esse comando, mais embaixo a animação será iniciada.
 
+    //Explicação "pageYOffset": https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset
+    //Explicação "innerHeight": https://developer.mozilla.org/pt-BR/docs/Web/API/Window/innerHeight
+
     elementos.forEach(function(elemento) { //Cada item de "elementos" será repassado para "elemento".
         if (topo_página_janela > elemento.offsetTop) {
             elemento.classList.add(animação_classe)
+            
+            //Explicação "offsetTop": https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLElement/offsetTop
+            //Explicação "classList": https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList
         }
 
         else {
