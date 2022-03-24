@@ -17,5 +17,6 @@ for (let i = 0; i < acordeon_array.length; i++) {
         }
         
         "scrollHeight": https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight
+        "maxHeight": https://www.w3schools.com/cssref/pr_dim_max-height.asp
     })
 }
