@@ -13,7 +13,9 @@ for (let i = 0; i < acordeon_array.length; i++) {
         }
 
         else {
-            painel.style.maxHeight = painel.scrollHeight+'px'
+            painel.style.maxHeight = painel.scrollHeight + 'px'
         }
+        
+        "scrollHeight": https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight
     })
 }
