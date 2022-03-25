@@ -13,6 +13,8 @@ function pesquisar() {
 
         if (links.innerHTML.toUpperCase().indexOf(filtro) > -1) {
             menu_itens[i].style.display = ''
+            
+            //Explicação: caso o teste lógico seja verdadeiro, a "menu_itens" na posição "i" não terá o seu "display" ("block") alterado.
         }
         
         "indexOf": https://programandosolucoes.dev.br/2021/01/19/indexof-javascript/
