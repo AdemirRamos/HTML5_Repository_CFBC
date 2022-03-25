@@ -16,13 +16,15 @@ body {
 
 .tabs > button {
     background-color: inherit; /*Herda a cor de fundo do elemento pai.*/
-    float: left; /*Checar.*/
+    float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.4s;
     font-size: 17px;
+    
+    /*"float": https://developer.mozilla.org/pt-BR/docs/Web/CSS/float*/
 }
 
 .tabs > button:hover {
