@@ -13,6 +13,10 @@ function abrir_tab(evento, tab_nome) {
 
     document.getElementById(tab_nome).style.display = 'block'
     evento.currentTarget.classList.add('active')
+    
+    //"currentTarget": https://developer.mozilla.org/pt-BR/docs/Web/API/Event/currentTarget
+    //"click()": https://api.jquery.com/click/
 }
 
 document.getElementById('primeira_tab').click()
+//Salvo engado, o "click()" fará com que o elemento que o receba seja renderizado clicado.
