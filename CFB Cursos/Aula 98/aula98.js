@@ -11,9 +11,11 @@ function pesquisar() {
         links = menu_itens[i].getElementsByTagName('a')[0]
         //Observação: novamente: ao invés de iniciar o processo por "document", começamos por outro elemento.
 
-        if (links.innerHTML.toUpperCase().indexOf(filtro) > -1) { //Pesquisar "indexOf()".
+        if (links.innerHTML.toUpperCase().indexOf(filtro) > -1) {
             menu_itens[i].style.display = ''
         }
+        
+        "indexOf": https://programandosolucoes.dev.br/2021/01/19/indexof-javascript/
 
         else {
             menu_itens[i].style.display = 'none'
