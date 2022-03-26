@@ -9,8 +9,9 @@
 .container_imagem > img {
     display: block;
     width: 100%;
-    height: auto; /*Checar.*/
-
+    height: auto;
+    
+    /*"height": https://www.w3schools.com/cssref/pr_dim_height.asp*/
 }
 
 .sobreposição {
