@@ -6,6 +6,8 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+    
+    /*"*": https://pt.stackoverflow.com/questions/209631/o-que-significa-o-asterisco-em-no-css*/
 }
 
 .coluna_cartão {
@@ -25,9 +27,12 @@ html {
 }
 
 .texto_cartão::after, .linha_cartão::after {
-    content: ''; /*Checar.*/
-    clear: both; /*Checar.*/
+    content: '';
+    clear: both;
     display: table;
+    
+    /*"content: https://www.w3schools.com/cssref/pr_gen_content.asp"*/
+    /*"clear": https://www.w3schools.com/cssref/pr_class_clear.asp*/
 }
 
 .título {
