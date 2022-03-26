@@ -16,6 +16,7 @@ window.onclick = function(event) {
                 abrir_dropdown.classList.remove('mostrar_menu')
                 
             //"contain": https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+            //"currentTarget" Vs. "target": https://www.jstips.co/en/javascript/difference-between-target-and-currentTarget/
             }
         }
     }
