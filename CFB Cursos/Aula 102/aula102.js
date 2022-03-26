@@ -1,5 +1,7 @@
 const nav = document.getElementsByTagName('nav')[0]
-const topo_nav = nav.offsetTop //Checar.
+const topo_nav = nav.offsetTop
+
+"offsetTop": https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLElement/offsetTop
 
 window.onscroll = function() {
     fixar_menu_no_topo()
@@ -13,6 +15,8 @@ function fixar_menu_no_topo() {
     if (window.pageYOffset >= topo_nav) { //Checar "window.pageYOffset" - parece estar obsoleto.
         nav.classList.add('fixo_no_topo')
     }
+    
+    //"pageYOffSet": https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset
 
     else {
         nav.classList.remove('fixo_no_topo')
