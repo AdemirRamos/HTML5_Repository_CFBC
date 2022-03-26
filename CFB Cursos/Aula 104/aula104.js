@@ -15,7 +15,7 @@ window.onclick = function(event) {
             if (abrir_dropdown.classList.contains('mostrar_menu')) {
                 abrir_dropdown.classList.remove('mostrar_menu')
                 
-            //"contain": https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+            //"contains": https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/includes
             //"currentTarget" Vs. "target": https://www.jstips.co/en/javascript/difference-between-target-and-currentTarget/
             }
         }
