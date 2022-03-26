@@ -30,6 +30,9 @@ function mostrar_slide(slide_number) {
     for (i = 0; i < indicadores.length; i++) {
         indicadores[i].className = indicadores[i].className.replace('ativo', '') //Removendo a classe "ativo".
     }
+    
+    //"replace": https://www.w3schools.com/jsref/jsref_replace.asp
+    //"className": https://www.w3schools.com/jsref/prop_html_classname.asp
 
     slides[número_slide - 1].style.display = 'block' //"Arrays" começam com zero, por isso o -1.
     indicadores[número_slide].className += 'ativo'
