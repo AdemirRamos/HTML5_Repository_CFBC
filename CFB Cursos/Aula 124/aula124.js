@@ -6,6 +6,8 @@ function digitação() {
     if (i < texto.length) {
         document.getElementById('texto').innerHTML += texto.charAt(i)
         i++
+        
+        //"charAt": https://www.w3schools.com/jsref/jsref_charat.asp
 
         //Alterando o intervalo de "STO":
 
