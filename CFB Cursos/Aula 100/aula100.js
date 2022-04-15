@@ -8,8 +8,8 @@ function rolar() {
         document.getElementById('logo').style.fontSize = '25px'
     }
     
-    "scrollTop": https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollTop
-    "documentElement": https://developer.mozilla.org/pt-BR/docs/Web/API/Document/documentElement
+    //"scrollTop": https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollTop
+    //"documentElement": https://developer.mozilla.org/pt-BR/docs/Web/API/Document/documentElement
 
     else {
         document.getElementsByTagName('header')[0].style.padding = '80px 10px'
