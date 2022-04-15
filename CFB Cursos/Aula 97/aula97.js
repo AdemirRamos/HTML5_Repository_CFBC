@@ -14,7 +14,8 @@ function abrir_tab(evento, tab_nome) {
     document.getElementById(tab_nome).style.display = 'block'
     evento.currentTarget.classList.add('active')
     
-    //"currentTarget": https://developer.mozilla.org/pt-BR/docs/Web/API/Event/currentTarget
+    //"target": https://www.w3schools.com/Jsref/event_target.asp
+    //"currentTarget": https://www.w3schools.com/Jsref/event_currenttarget.asp
     //"click()": https://api.jquery.com/click/
 }
 
