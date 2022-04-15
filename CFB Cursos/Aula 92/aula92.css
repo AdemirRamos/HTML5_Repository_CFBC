@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /*https://www.w3schools.com/cssref/css3_pr_box-sizing.asp*/
+    /*border-box: https://www.w3schools.com/cssref/css3_pr_box-sizing.asp*/
     
     overflow-x: hidden;
 }
@@ -172,7 +172,7 @@ article {
 
 .fechar_modal {
     position: absolute;
-    /*Explicação: https://www.w3schools.com/css/css_positioning.asp#:~:text=An%20element%20with%20position%3A%20absolute,moves%20along%20with%20page%20scrolling.*/
+    /*position: 1) https://www.w3schools.com/cssref/pr_class_position.asp / 2) https://www.w3schools.com/css/css_positioning.asp*/
 
     top: 15px;
     right: 35px;
