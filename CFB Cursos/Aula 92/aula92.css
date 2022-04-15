@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /*Explicação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing*/
+    /*https://www.w3schools.com/cssref/css3_pr_box-sizing.asp*/
     
     overflow-x: hidden;
 }
