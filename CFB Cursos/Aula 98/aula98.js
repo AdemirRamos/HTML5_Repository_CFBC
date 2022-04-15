@@ -17,7 +17,7 @@ function pesquisar() {
             //Explicação: caso o teste lógico seja verdadeiro, a "menu_itens" na posição "i" não terá o seu "display" ("block") alterado.
         }
         
-        "indexOf": https://programandosolucoes.dev.br/2021/01/19/indexof-javascript/
+        //"indexOf": https://programandosolucoes.dev.br/2021/01/19/indexof-javascript/
 
         else {
             menu_itens[i].style.display = 'none'
