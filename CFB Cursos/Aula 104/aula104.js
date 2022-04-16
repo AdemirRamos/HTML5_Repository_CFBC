@@ -7,6 +7,7 @@ window.onclick = function(event) {
         let dropdown = document.getElementsByClassName('dropdown_conteúdo')
         
         //"target": https://www.w3schools.com/jsref/event_target.asp
+        //"currentTarget": https://www.w3schools.com/jsref/event_currenttarget.asp
         //"matches": https://www.w3schools.com/jsref/met_element_matches.asp
         
         for (let i = 0; i < dropdown.length; i++) {
